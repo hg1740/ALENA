@@ -1,0 +1,54 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Explicit Versioning](https://github.com/exadra37-versioning/explicit-versioning).
+
+## [Unreleased]
+### Added
+- Updated drawing so can easily pan and zoom
+- Added beam stress and strain output in ALENA format
+- Added option to enable gravity for static nonlinear Nastran solution
+- Added CTRLDEF option for nonlinear analysis and IDAMP artificial damping
+- Added the Matran git repo as a submodule (with the aim of moving all nastran 
+	specific methods to this repo with time) https://github.com/farg-bristol/Matran
+- Added ability to change the twist of the wing wing span (which is then created
+	via DMI cards in the Nastran output)
+- Added a A321 model example that completes a sol144 and sol146 gust analysis
+### Changed
+- Enabled large rotation offset for beams with a shear centre offset (static nonlinear Nastran solution)
+- Example sub folders are now added to the path via the 'addsandbox' method
+- printing 'trim file' (SOL144 file) card printing switched to Matran printinig methods
+- Changed how NAstran path deals with spaces to make it system agnostic
+- Changed Hodges wing example to vary the twist along the span
+### Deprecated
+### Removed
+### Fixed
+- Fixed bug plotting wings with control surfaces
+- Fixed recersion issues with ort check
+- Fixed hinge direction + added DMI card
+- Fixed indentation
+- Fixed LOAD card structure
+- Fixed .f06 output to get full grid displacement vectors
+- Fixed force/moment entry overflowing into adjacent field
+- Fixed bug which throw an error if fo6 did not exist
+- Fixed 'random' printing of the word 'close' to the matlab command prompt
+
+## [1.0.0.0] - 2021-04-07
+### Added
+- Drawing a line in the sand under current development and specifing it as version 1
+- Current static nonlinear funtionality:
+	- Generating an ALENA object for a beam
+	- Generating an ALENA object for a lifting surface using various parameterization methods
+	- Object parameters and properties can be varied along its span at user defined points
+	- Setting up coordinate systems
+	- Defining beam section orientation
+	- Applying point forces and moments (including follower loads) at user defined locations along a beam
+	- Adding point masses which will automatically be rigidly attached to closest grid point in Nastran FE model
+	- Creating Nastran input files, running Nastran, and extracting results in ALENA format
+- Current FWT functionality
+	- can define a floating FWT as part of a lifting surface
+### Changed
+### Deprecated
+### Removed

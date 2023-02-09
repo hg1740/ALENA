@@ -1,0 +1,572 @@
+<Framework>	
+<!-- Aircraft -->
+<Aircraft>
+    <!-- Mass Cases -->
+    <MTOM type="double" attr="scalar">8e5</MTOM>		
+    <MZFM type="double" attr="scalar">6e5</MZFM>	
+    <MLM type="double" attr="scalar">1e6</MLM>	
+    <OEM type="double" attr="scalar">4e5</OEM>	
+    <!-- Starboard Wing (LiftingSurface) -->
+    <StbdWing>
+        <!-- Common variables -->
+        <Name type="char" attr="scalartext">StbdWing</Name>
+        <Description type="char" attr="scalartext">This is the starboard wing.</Description>
+        <DisplayName type="char" attr="scalartext">Starboard Wing</DisplayName>
+        <Type type="char" attr="scalartext">LiftingSurface</Type>
+        <Parent type="char" attr="scalartext">Fuselage</Parent>		
+        <Span type="double" attr="scalar">25.899</Span>
+        <SpanVector type="char" attr="scalartext">Y</SpanVector> 
+        <!-- Locating the origin of the component -->
+        <!-- <Origin type="double" attr="row,numel,3">17.689,0,7.715</Origin> -->
+        <SOffset type="double" attr="scalar,nonnegative">0.4914</SOffset>
+        <ZOffset type="double" attr="scalar">2.0</ZOffset>
+        <SOffsetFlag type="char" attr="scalartext">R</SOffsetFlag>
+        <!-- Sectional variables : Coordinate Set -->	
+        <LE type="double"></LE> <!-- Must be in order from root tip -->
+        <TE type="double"></TE> <!-- Must be in order from root tip -->
+        <!-- Sectional variables : Parameter Set -->	
+        <Chord type="double" attr="row">3.276,3.276,2.905,1.146</Chord> <!-- Chord varies linearly as standard -->
+        <Chord_eta type="double" attr="row">0,0.049,0.577,1</Chord_eta>
+        <!-- Sweep -->
+        <Sweep type="double" attr="row">0,12.52,12.52</Sweep> <!-- Each orientation angle has 3 parameters to allow for curved beams -->
+        <Sweep_eta type="double" attr="row">0,0.049,1</Sweep_eta>
+        <SweepLoc type="double" attr="scalar">0.5</SweepLoc>
+        <SweepType type="char" attr="scalartext">constant</SweepType>
+        <!-- Dihedral -->
+        <Dihedral type="double" attr="row">-1,-1</Dihedral>
+        <Dihedral_eta type="double" attr="row">0,1</Dihedral_eta>
+        <DihedralType  type="char" attr="scalartext">constant</DihedralType>
+        <!-- AoA (Angle of Attack) -->
+        <AoA type="double" attr="row">3,3</AoA>
+        <AoA_eta type="double" attr="row">0,1</AoA_eta>
+        <AoAType type="char" attr="scalartext">constant</AoAType>
+        <!-- Sectional Variables : Sweep Set -->	
+        <!-- Leading Edge Sweep -->
+        <LEsweep_in type="double"></LEsweep_in>
+        <LEsweep_eta_in type="double"></LEsweep_eta_in>
+        <LEsweep_out type="double"></LEsweep_out>
+        <LEsweep_eta_out type="double"></LEsweep_eta_out>
+        <!-- Trailing Edge Sweep -->
+        <TEsweep_in type="double"></TEsweep_in>
+        <TEsweep_eta_in type="double"></TEsweep_eta_in>
+        <TEsweep_out type="double"></TEsweep_out>
+        <TEsweep_eta_out type="double"></TEsweep_eta_out>
+        <!-- Sectional Variables : Common -->
+        <BeamLoc type="double" attr="row">0.5,0.5,0.5,0.5</BeamLoc><!-- Beam location varies linearly as standard -->
+        <BeamLoc_eta type="double" attr="row">0,0.049,0.577,1</BeamLoc_eta>
+        <Aerofoil type="string">NACA0016,NACA0008</Aerofoil> <!-- Cross-section varies linearly as standard -->
+        <Aerofoil_eta type="double" attr="row">0,1</Aerofoil_eta>
+        <!-- Structural Layout -->
+        <FrontSpar>
+            <Name type="char">StbdWingFrontSpar</Name>
+            <Description type="char">This is the front spar of the starboard wing.</Description>
+            <DisplayName type="char">Starboard Wing - Front Spar</DisplayName>
+            <Type type="char">Spar</Type>
+            <Parent type="char">StbdWing</Parent>
+            <Children type="char"></Children>
+            <XLoc type="double">0.15,0.15</XLoc>
+            <Eta type="double">0,1</Eta>
+			<EtaThickness type="double" attr="row">0,1</EtaThickness>
+			<Thickness type="double" attr="row">0.005,0.005</Thickness>
+        </FrontSpar>
+		<MidSpar>
+            <Name type="char">StbdWingMidSpar</Name>
+            <Description type="char">This is the middle spar of the starboard wing.</Description>
+            <DisplayName type="char">Starboard Wing - Middle Spar</DisplayName>
+            <Type type="char">Spar</Type>
+            <Parent type="char">StbdWing</Parent>
+            <Children type="char"></Children>
+            <XLoc type="double">0.4,0.4</XLoc>
+            <Eta type="double">0,1</Eta>
+			<EtaThickness type="double" attr="row">0,1</EtaThickness>
+			<Thickness type="double" attr="row">0.005,0.005</Thickness>
+        </MidSpar>
+		<MidSpar2>
+            <Name type="char">StbdWingMidSpar2</Name>
+            <Description type="char">This is the second middle spar of the starboard wing.</Description>
+            <DisplayName type="char">Starboard Wing - Middle Spar 2</DisplayName>
+            <Type type="char">Spar</Type>
+            <Parent type="char">StbdWing</Parent>
+            <Children type="char"></Children>
+            <XLoc type="double">0.5,0.5</XLoc>
+            <Eta type="double">0,1</Eta>
+			<EtaThickness type="double" attr="row">0,1</EtaThickness>
+			<Thickness type="double" attr="row">0.005,0.005</Thickness>
+        </MidSpar2>
+        <RearSpar>
+            <Name type="char">StbdWingRearSpar</Name>
+            <Description type="char">This is the rear spar of the starboard wing.</Description>
+            <DisplayName type="char">Starboard Wing - Rear Spar</DisplayName>
+            <Type type="char">Spar</Type>
+            <Parent type="char">StbdWing</Parent>
+            <Children type="char"></Children>
+            <XLoc type="double">0.65,0.65</XLoc>
+            <Eta type="double">0,1</Eta>
+			<EtaThickness type="double" attr="row">0,1</EtaThickness>
+			<Thickness type="double" attr="row">0.005,0.005</Thickness>
+        </RearSpar>
+        <Stringer>
+            <Pitch type="double">0.2</Pitch>
+        </Stringer>
+        <!-- Control Surfaces -->
+        <Control_surf>
+            <Name type="char" >Ail1</Name>
+            <Type type="char">ControlSurface</Type>
+            <DisplayName type="char" >Inboard Aileron</DisplayName>
+            <Parent type="char">StbdWing</Parent>
+            <Children type="char"></Children>
+            <Eta type="double" attr="row,numel,2">0.3, 0.45</Eta>
+            <xLE type="double" attr="row,numel,2">0.79,0.79</xLE>
+            <xTE type="double" attr="row,numel,2">1.0,1.0</xTE>	
+            <Max_def type="double" attr="scalar">30.0</Max_def>
+            <Max_rate type="double" attr="scalar">80.0</Max_rate>
+        </Control_surf>
+		<Control_surf>
+            <Name type="char" >Ail2</Name>
+            <Type type="char">ControlSurface</Type>
+            <DisplayName type="char" >Midboard Aileron</DisplayName>
+            <Parent type="char">StbdWing</Parent>
+            <Children type="char"></Children>
+            <Eta type="double" attr="row,numel,2">0.55, 0.70</Eta>
+            <xLE type="double" attr="row,numel,2">0.79,0.79</xLE>
+            <xTE type="double" attr="row,numel,2">1.0,1.0</xTE>	
+            <Max_def type="double" attr="scalar">30.0</Max_def>
+            <Max_rate type="double" attr="scalar">80.0</Max_rate>
+        </Control_surf>
+		<Control_surf>
+            <Name type="char" >Ail3</Name>
+            <Type type="char">ControlSurface</Type>
+            <DisplayName type="char" >Outboard Aileron</DisplayName>
+            <Parent type="char">StbdWing</Parent>
+            <Children type="char"></Children>
+            <Eta type="double" attr="row,numel,2">0.80, 0.90</Eta>
+            <xLE type="double" attr="row,numel,2">0.79,0.79</xLE>
+            <xTE type="double" attr="row,numel,2">1.0,1.0</xTE>	
+            <Max_def type="double" attr="scalar">30.0</Max_def>
+            <Max_rate type="double" attr="scalar">80.0</Max_rate>
+        </Control_surf>
+        <!-- Material Properties -->
+        <Material>
+		    <UniqueIdentifier type = "handle">d508a491-6193-4479-9917-94d73d67b86f</UniqueIdentifier>
+			<Name type="char">Aluminium T6065</Name>
+            <Type type="char">Material</Type>
+            <E type="double" attr="scalar">79000000</E>
+            <G type="double" attr="scalar">29600000</G>
+            <Rho type="double">2900</Rho>
+            <Nu type="double">0.33</Nu>
+        </Material>		
+        <Rib_pitch type="double">0.60</Rib_pitch>
+        <Stringer_pitch type="double">0.15</Stringer_pitch>
+    </StbdWing>
+    <!-- Port Wing (LiftingSurface) -->
+    <PortWing>
+        <!-- Common variables -->
+        <Name type="char" attr="scalartext">PortWing</Name>
+        <Description type="char" attr="scalartext">This is the port wing.</Description>
+        <DisplayName type="char" attr="scalartext">Port Wing</DisplayName>
+        <Type type="char" attr="scalartext">LiftingSurface</Type>
+        <Parent type="char" attr="scalartext">StbdWing</Parent>
+        <Children type="char" attr="scalartext"></Children>			
+        <Span type="double" attr="scalar">-25.899</Span>
+        <SpanVector type="char" attr="scalartext">Y</SpanVector> 
+        <!-- Locating the origin of the component -->
+        <SOffset type="double" attr="scalar,nonnegative">0</SOffset>
+        <!-- Sectional variables : Coordinate Set -->	
+        <LE type="double"></LE> <!-- Must be in order from root tip -->
+        <TE type="double"></TE> <!-- Must be in order from root tip -->
+        <!-- Sectional variables : Parameter Set -->	
+        <Chord type="double" attr="row">3.276,3.276,2.905,1.146</Chord> <!-- Chord varies linearly as standard -->
+        <Chord_eta type="double" attr="row">0,0.049,0.577,1</Chord_eta>
+        <!-- Sweep -->
+        <Sweep type="double" attr="row">0,12.52,12.52</Sweep> <!-- Each orientation angle has 3 parameters to allow for curved beams -->
+        <Sweep_eta type="double" attr="row">0,0.049,1</Sweep_eta>
+        <SweepLoc type="double" attr="scalar">0.5</SweepLoc>
+        <SweepType type="char" attr="scalartext">constant</SweepType>
+        <!-- Dihedral -->
+        <Dihedral type="double" attr="row">-1,-1</Dihedral>
+        <Dihedral_eta type="double" attr="row">0,1</Dihedral_eta>
+        <DihedralType  type="char" attr="scalartext">constant</DihedralType>
+        <!-- AoA (Angle of Attack) -->
+        <AoA type="double" attr="row">3,3</AoA>
+        <AoA_eta type="double" attr="row">0,1</AoA_eta>
+        <AoAType type="char" attr="scalartext">constant</AoAType>
+        <!-- Sectional Variables : Sweep Set -->	
+        <!-- Leading Edge Sweep -->
+        <LEsweep_in type="double"></LEsweep_in>
+        <LEsweep_eta_in type="double"></LEsweep_eta_in>
+        <LEsweep_out type="double"></LEsweep_out>
+        <LEsweep_eta_out type="double"></LEsweep_eta_out>
+        <!-- Trailing Edge Sweep -->
+        <TEsweep_in type="double"></TEsweep_in>
+        <TEsweep_eta_in type="double"></TEsweep_eta_in>
+        <TEsweep_out type="double"></TEsweep_out>
+        <TEsweep_eta_out type="double"></TEsweep_eta_out>
+        <!-- Sectional Variables : Common -->
+        <BeamLoc type="double" attr="row">0.5,0.5,0.5,0.5</BeamLoc><!-- Beam location varies linearly as standard -->
+        <BeamLoc_eta type="double" attr="row">0,0.049,0.577,1</BeamLoc_eta>
+        <Aerofoil type="string">NACA0016,NACA0016</Aerofoil> <!-- Cross-section varies linearly as standard -->
+        <Aerofoil_eta type="double" attr="row">0,1</Aerofoil_eta>
+        <!-- Structural Layout -->
+        <FrontSpar>
+            <Name type="char">PortWingFrontSpar</Name>
+            <Description type="char">This is the front spar of the port wing.</Description>
+            <DisplayName type="char">Port Wing - Front Spar</DisplayName>
+            <Type type="char">Spar</Type>
+            <Parent type="char">PortWing</Parent>
+            <Children type="char"></Children>
+            <xLoc type="double">0.15,0.15</xLoc>
+            <eta type="double">0,1</eta>
+			<EtaThickness type="double" attr="row">0,1</EtaThickness>
+			<Thickness type="double" attr="row">0.005,0.005</Thickness>
+        </FrontSpar>
+        <RearSpar>
+            <Name type="char">PortWingRearSpar</Name>
+            <Description type="char">This is the rear spar of the port wing.</Description>
+            <DisplayName type="char">Port Wing - Rear Spar</DisplayName>
+            <Type type="char">Spar</Type>
+            <Parent type="char">PortWing</Parent>
+            <Children type="char"></Children>
+            <xLoc type="double">0.65,0.65</xLoc>
+            <eta type="double">0,1</eta>
+			<EtaThickness type="double" attr="row">0,1</EtaThickness>
+			<Thickness type="double" attr="row">0.005,0.005</Thickness>
+        </RearSpar>
+        <Stringer>
+            <Pitch type="double">0.2</Pitch>
+        </Stringer>
+        <!-- Control Surfaces -->
+        <Control_surf>
+            <Name type="char" >Ail4</Name>
+            <Type type="char">ControlSurface</Type>
+            <DisplayName type="char" >Inboard Aileron</DisplayName>
+            <Parent type="char">PortWing</Parent>
+            <Children type="char"></Children>
+            <Eta type="double" attr="row,numel,2">0.3, 0.45</Eta>
+            <xLE type="double" attr="row,numel,2">0.79,0.79</xLE>
+            <xTE type="double" attr="row,numel,2">1.0,1.0</xTE>	
+            <Max_def type="double" attr="scalar">30.0</Max_def>
+            <Max_rate type="double" attr="scalar">80.0</Max_rate>
+        </Control_surf>
+		<Control_surf>
+            <Name type="char" >Ail5</Name>
+            <Type type="char">ControlSurface</Type>
+            <DisplayName type="char" >Midboard Aileron</DisplayName>
+            <Parent type="char">PortWing</Parent>
+            <Children type="char"></Children>
+            <Eta type="double" attr="row,numel,2">0.55, 0.70</Eta>
+            <xLE type="double" attr="row,numel,2">0.79,0.79</xLE>
+            <xTE type="double" attr="row,numel,2">1.0,1.0</xTE>	
+            <Max_def type="double" attr="scalar">30.0</Max_def>
+            <Max_rate type="double" attr="scalar">80.0</Max_rate>
+        </Control_surf>
+		<Control_surf>
+            <Name type="char" >Ail6</Name>
+            <Type type="char">ControlSurface</Type>
+            <DisplayName type="char" >Outboard Aileron</DisplayName>
+            <Parent type="char">PortWing</Parent>
+            <Children type="char"></Children>
+            <Eta type="double" attr="row,numel,2">0.80, 0.90</Eta>
+            <xLE type="double" attr="row,numel,2">0.79,0.79</xLE>
+            <xTE type="double" attr="row,numel,2">1.0,1.0</xTE>	
+            <Max_def type="double" attr="scalar">30.0</Max_def>
+            <Max_rate type="double" attr="scalar">80.0</Max_rate>
+        </Control_surf>
+        <!-- Material Properties -->
+        <Material type="structure">
+            <ID type="char">T6065</ID>
+            <Type type="char">Aluminium</Type>
+            <Tensile_yield type="double">276</Tensile_yield>
+            <Shear_yield type="double">151.8</Shear_yield>
+            <Density type="double">2900</Density>
+            <PoissonsRatio type="double">0.33</PoissonsRatio>
+        </Material>		
+        <Rib_pitch type="double">0.60</Rib_pitch>
+        <Stringer_pitch type="double">0.15</Stringer_pitch>
+    </PortWing>
+    <!-- Horizontal Tail Plane (LiftingSurface) -->
+    <HTP_Stbd>
+        <!-- Global variables -->
+        <Name type="char">HTP_Stbd</Name>
+        <Description type="char">This is the horizontal tail plane for the starboard side.</Description>
+        <DisplayName type="char">Starboard Horizontal tail plane</DisplayName>
+        <Type type="char">LiftingSurface</Type>
+        <Parent type="char">VTP</Parent>
+		<SOffset type="double" attr="scalar">1</SOffset>
+		<RootXOffset type="double" attr="scalar">0.5</RootXOffset>
+        <Span type="double" attr="scalar">11.731</Span>
+        <SpanVector type="char">Y</SpanVector> 
+        <!-- Sectional variables : Coordinate Set -->	
+        <LE type="double"></LE> <!-- Must be in order from root tip -->
+        <TE type="double"></TE> <!-- Must be in order from root tip -->
+        <!-- Sectional variables : Parameter Set -->	
+        <Chord type="double">3.476,1.217</Chord> <!-- Chord varies linearly as standard -->
+        <Chord_eta type="double">0,1</Chord_eta>
+        <!-- Sweep -->
+        <Sweep type="double">20.63,20.63</Sweep> <!-- Each orientation angle has 3 parameters to allow for curved beams -->
+        <Sweep_eta type="double">0,1</Sweep_eta>
+        <SweepLoc type="double" attr="scalar">0.25</SweepLoc>
+        <SweepType type="char" attr="scalartext">constant</SweepType>
+        <!-- Dihedral (Supplements Sweep Set) -->
+        <Dihedral type="double">-3,-3</Dihedral>
+        <Dihedral_eta type="double">0,1</Dihedral_eta>
+        <DihedralType type="char" attr="scalartext">constant</DihedralType>
+        <!-- AoA (Angle of Attack) (Supplements Sweep Set) -->
+        <AoA type="double">0,0</AoA>
+        <AoA_eta type="double">0,1</AoA_eta>
+        <AoAType type="char" attr="scalartext">constant</AoAType>
+        <!-- Sectional Variables : Sweep Set -->	
+        <!-- Leading Edge Sweep -->
+        <LEsweep_in type="double"></LEsweep_in>
+        <LEsweep_eta_in type="double"></LEsweep_eta_in>
+        <LEsweep_out type="double"></LEsweep_out>
+        <LEsweep_eta_out type="double"></LEsweep_eta_out>
+        <!-- Trailing Edge Sweep -->
+        <TEsweep_in type="double"></TEsweep_in>
+        <TEsweep_eta_in type="double"></TEsweep_eta_in>
+        <TEsweep_out type="double"></TEsweep_out>
+        <TEsweep_eta_out type="double"></TEsweep_eta_out>	
+        <!-- Sectional Variables : Common -->
+        <BeamLoc type="double">0.5,0.5</BeamLoc><!-- Beam location varies linearly as standard -->
+        <BeamLoc_eta type="double">0,1</BeamLoc_eta>
+        <Aerofoil type="string">NACA0016,NACA0016</Aerofoil> <!-- Cross-section varies linearly as standard -->
+        <Aerofoil_eta type="double">0,1</Aerofoil_eta>
+        <!-- Structural Layout -->	
+        <!-- Control Surfaces -->
+        <Control_surf>
+            <Name type="char" >Elev1</Name>
+            <Type type="char">ControlSurface</Type>
+            <DisplayName type="char" >Starboard Elevator</DisplayName>
+            <Parent type="char">HTP_Stbd</Parent>
+            <Children type="char"></Children>
+            <Eta type="double" attr="row,numel,2">0.2, 0.8775</Eta>
+            <xLE type="double" attr="row,numel,2">0.6,0.6</xLE>
+            <xTE type="double" attr="row,numel,2">1.0,1.0</xTE>	
+            <Max_def type="double" attr="scalar">30.0</Max_def>
+            <Max_rate type="double" attr="scalar">80.0</Max_rate>
+        </Control_surf>
+    </HTP_Stbd>
+	<HTP_Port>
+        <!-- Global variables -->
+        <Name type="char">HTP_Port</Name>
+        <Description type="char">This is the horizontal tail plane for the port side.</Description>
+        <DisplayName type="char">Portside Horizontal tail plane</DisplayName>
+        <Type type="char">LiftingSurface</Type>
+        <Parent type="char">HTP_Stbd</Parent>
+		<SOffset type="double" attr="scalar">0</SOffset>
+        <Span type="double" attr="scalar">-11.731</Span>
+        <SpanVector type="char">Y</SpanVector> 
+        <!-- Sectional variables : Coordinate Set -->	
+        <LE type="double"></LE> <!-- Must be in order from root tip -->
+        <TE type="double"></TE> <!-- Must be in order from root tip -->
+        <!-- Sectional variables : Parameter Set -->	
+        <Chord type="double">3.476,1.217</Chord> <!-- Chord varies linearly as standard -->
+        <Chord_eta type="double">0,1</Chord_eta>
+        <!-- Sweep -->
+        <Sweep type="double">20.63,20.63</Sweep> <!-- Each orientation angle has 3 parameters to allow for curved beams -->
+        <Sweep_eta type="double">0,1</Sweep_eta>
+        <SweepLoc type="double" attr="scalar">0.25</SweepLoc>
+        <SweepType type="char" attr="scalartext">constant</SweepType>
+        <!-- Dihedral (Supplements Sweep Set) -->
+        <Dihedral type="double">-3,-3</Dihedral>
+        <Dihedral_eta type="double">0,1</Dihedral_eta>
+        <DihedralType type="char" attr="scalartext">constant</DihedralType>
+        <!-- AoA (Angle of Attack) (Supplements Sweep Set) -->
+        <AoA type="double">0,0</AoA>
+        <AoA_eta type="double">0,1</AoA_eta>
+        <AoAType type="char" attr="scalartext">constant</AoAType>
+        <!-- Sectional Variables : Sweep Set -->	
+        <!-- Leading Edge Sweep -->
+        <LEsweep_in type="double"></LEsweep_in>
+        <LEsweep_eta_in type="double"></LEsweep_eta_in>
+        <LEsweep_out type="double"></LEsweep_out>
+        <LEsweep_eta_out type="double"></LEsweep_eta_out>
+        <!-- Trailing Edge Sweep -->
+        <TEsweep_in type="double"></TEsweep_in>
+        <TEsweep_eta_in type="double"></TEsweep_eta_in>
+        <TEsweep_out type="double"></TEsweep_out>
+        <TEsweep_eta_out type="double"></TEsweep_eta_out>	
+        <!-- Sectional Variables : Common -->
+        <BeamLoc type="double">0.5,0.5</BeamLoc><!-- Beam location varies linearly as standard -->
+        <BeamLoc_eta type="double">0,1</BeamLoc_eta>
+        <Aerofoil type="string">NACA0016,NACA0016</Aerofoil> <!-- Cross-section varies linearly as standard -->
+        <Aerofoil_eta type="double">0,1</Aerofoil_eta>
+        <!-- Structural Layout -->	
+        <!-- Control Surfaces -->
+        <Control_surf>
+            <Name type="char" >Elev2</Name>
+            <Type type="char">ControlSurface</Type>
+            <DisplayName type="char" >Starboard Elevator</DisplayName>
+            <Parent type="char">HTP_Port</Parent>
+            <Children type="char"></Children>
+            <Eta type="double" attr="row,numel,2">0.2, 0.8775</Eta>
+            <xLE type="double" attr="row,numel,2">0.6,0.6</xLE>
+            <xTE type="double" attr="row,numel,2">1.0,1.0</xTE>	
+            <Max_def type="double" attr="scalar">30.0</Max_def>
+            <Max_rate type="double" attr="scalar">80.0</Max_rate>
+        </Control_surf>
+	</HTP_Port>
+    <!-- Vertical Tail Plane (LiftingSurface) -->
+    <VTP>
+        <!-- Global variables-->
+        <Name type="char">VTP</Name>
+        <Description type="char">This is the vertical tail plane.</Description>
+        <DisplayName type="char">Vertical tail plane</DisplayName>
+        <Type type="char">LiftingSurface</Type>
+        <Parent type="char">Fuselage</Parent>
+		<SOffset type="double" attr="scalar">0.92</SOffset>
+		<ZOffset type="double" attr="scalar">1</ZOffset>
+        <Span type="double" attr="scalar">5.259</Span>
+        <SpanVector type="char">Z</SpanVector> 
+        <!-- Sectional variables : Coordinate Set -->	
+        <LE type="double"></LE> <!-- Must be in order from root tip -->
+        <TE type="double"></TE> <!-- Must be in order from root tip -->
+        <!-- Sectional variables : Parameter Set -->	
+        <Chord type="double">5.259, 5.259</Chord> <!-- Chord varies linearly as standard -->
+        <Chord_eta type="double">0,1</Chord_eta>
+        <!-- Sweep -->
+        <Sweep type="double" attr="row">41,41</Sweep> <!-- Each orientation angle has 4 parameters to allow for curved beams -->
+        <Sweep_eta type="double" attr="row">0,1</Sweep_eta>
+        <SweepLoc type="double" attr="scalar">0.25</SweepLoc>
+        <!-- Dihedral (Supplements Sweep Set) -->
+        <Dihedral type="double">0,0</Dihedral>
+        <Dihedral_eta type="double">0,1</Dihedral_eta>
+        <!-- AoA (Angle of Attack) (Supplements Sweep Set) -->
+        <AoA type="double" attr="row">0,0</AoA>
+        <AoA_eta type="double" attr="row">0,1</AoA_eta>
+        <!-- Sectional Variables : Sweep Set -->	
+        <!-- Leading Edge Sweep -->
+        <LEsweep_in type="double" attr="row"></LEsweep_in>
+        <LEsweep_eta_in type="double" attr="row"></LEsweep_eta_in>
+        <LEsweep_out type="double" attr="row"></LEsweep_out>
+        <LEsweep_eta_out type="double" attr="row"></LEsweep_eta_out>
+        <!-- Trailing Edge Sweep -->
+        <TEsweep_in type="double" attr="row"></TEsweep_in>
+        <TEsweep_eta_in type="double" attr="row"></TEsweep_eta_in>
+        <TEsweep_out type="double" attr="row"></TEsweep_out>
+        <TEsweep_eta_out type="double" attr="row"></TEsweep_eta_out>	
+        <!-- Sectional Variables : Common -->
+        <BeamLoc type="double" attr="row">0.5,0.5</BeamLoc><!-- Beam location varies linearly as standard -->
+        <BeamLoc_eta type="double" attr="row">0,1</BeamLoc_eta>
+        <Aerofoil type="string" attr="row">NACA0016,NACA0016</Aerofoil> <!-- Cross-section varies linearly as standard -->
+        <Aerofoil_eta type="double" attr="row">0,1</Aerofoil_eta>
+        <!-- Control surface (Rudder) -->
+        <Control_surf>
+            <Name type="char" >Rudder</Name>
+            <Type type="char">ControlSurface</Type>
+            <DisplayName type="char" >Rudder</DisplayName>
+            <Parent type="char">VTP</Parent>
+            <Children type="char"></Children>
+            <Eta type="double" attr="row,numel,2">0.05, 0.95</Eta>
+            <xLE type="double" attr="row,numel,2">0.79,0.79</xLE>
+            <xTE type="double" attr="row,numel,2">1.0,1.0</xTE>	
+            <Max_def type="double" attr="scalar">30.0</Max_def>
+            <Max_rate type="double" attr="scalar">80.0</Max_rate>
+        </Control_surf>
+        <!-- Structural Layout -->	
+        <FrontSpar>
+            <Name type="char">VTPFrontSpar</Name>
+            <Description type="char">This is the front spar of the VTP.</Description>
+            <DisplayName type="char">VTP - Front Spar</DisplayName>
+            <Type type="char">Spar</Type>
+            <Parent type="char">VTP</Parent>
+            <Children type="char"></Children>
+            <XLoc type="double">0.15,0.15</XLoc>
+            <Eta type="double">0,1</Eta>
+			<EtaThickness type="double" attr="row">0,1</EtaThickness>
+			<Thickness type="double" attr="row">0.005,0.005</Thickness>
+        </FrontSpar>	
+        <RearSpar>
+            <Name type="char">VTPRearSpar</Name>
+            <Description type="char">This is the rear spar of the VTP.</Description>
+            <DisplayName type="char">VTP - Rear Spar</DisplayName>
+            <Type type="char">Spar</Type>
+            <Parent type="char">VTP</Parent>
+            <Children type="char"></Children>
+            <XLoc type="double">0.65,0.65</XLoc>
+            <Eta type="double">0,1</Eta>
+			<EtaThickness type="double" attr="row">0,1</EtaThickness>
+			<Thickness type="double" attr="row">0.005,0.005</Thickness>
+        </RearSpar>
+    </VTP>
+    <!-- Fuselage (BluffBody)-->
+    <Fuselage>
+        <!-- Global variables -->
+        <Name type="char">Fuselage</Name>
+        <Description type="char">This is the fuselage.</Description>
+        <DisplayName type="char">Fuselage</DisplayName>
+        <Type type="char">BluffBody</Type>
+        <Parent type="char"></Parent>
+        <Children type="char"></Children>
+        <!-- Locating the origin of the component -->
+        <Origin type="double" attr="row,numel,3">0,0,3.858</Origin>
+        <!-- Common Properties -->			
+        <Radius type="double" attr="row">0,0.3844030,0.565081,0.707928,0.830682,0.940375,...
+            1.04067,1.13377,1.22112,1.30374,1.38237,1.45758,1.52981,1.59941,1.66667,...
+            1.73182,1.79508,1.8566,1.91653,1.975,2.11455,2.11455,2.04234,1.96868,1.89345,...
+            1.81653,1.73774,1.656920,1.57385,1.48825,1.39983,1.30819,1.21282,1.11308,1.0081,...
+        0.896641,0.776853,0.645724,0.497601,0.31873,0</Radius>
+        <!-- Length Set -->
+        <Length type="double" attr="scalar">38.0238</Length>
+        <Eta type="double" attr="row">0,0.005268,0.010536,0.015805,0.021073,...
+            0.026342,0.03161,0.036879,0.042147,0.047415,0.052684,...
+            0.057952,0.063221,0.0684890,0.073758,0.079026,0.084294,0.089563,0.094831,0.1001,0.411022,...
+            0.721944,0.736578,0.751213,0.765847,0.780482,0.795117,0.809751,0.824386,0.83902,0.853655,...
+        0.868289,0.882924,0.897558,0.912193,0.926827,0.941462,0.956096,0.970731,0.985365,1</Eta>
+        <!-- Coordinate Set -->
+        <XData type="double"></XData>
+        <YData type="double"></YData>
+        <ZData type="double"></ZData>
+    </Fuselage>
+    <!-- Engines (BluffBody) -->
+    <Engine_1> <!-- Starboard Engine 1 -->
+        <!-- Global variables -->
+        <Name type="char">InbdEngine_Stbd</Name>
+        <Description type="char">This is the inboard engine on the starboard wing.</Description>
+        <DisplayName type="char">Starboard Inboard Engine</DisplayName>
+        <Type type="char">BluffBody</Type>
+        <Parent type="char">StbdWing</Parent>
+        <Children type="char"></Children>
+        <!-- Locating the origin of the component -->
+        <!-- <Origin type="double" attr="row,numel,3">10,12,5.715</Origin>-->
+        <SOffset type="double" attr="scalar,nonnegative">0.21</SOffset>
+        <XOffset type="double" attr="scalar">-2.0</XOffset>
+        <YOffset type="double" attr="scalar">0.0</YOffset>
+        <ZOffset type="double" attr="scalar">-1.2</ZOffset>
+        <!-- Common Properties -->			
+        <Radius type="double" attr="row">1.1,1.1</Radius>
+        <!-- Length Set -->
+        <Length type="double" attr="scalar">4</Length>
+        <Eta type="double" attr="row">0,1</Eta>
+        <!-- Coordinate Set -->
+        <XData type="double"></XData>
+        <YData type="double"></YData>
+        <ZData type="double"></ZData>
+    </Engine_1>
+	<Engine_2> <!-- Port Engine 1 -->
+        <!-- Global variables -->
+        <Name type="char">InbdEngine_Port</Name>
+        <Description type="char">This is the inboard engine on the port wing.</Description>
+        <DisplayName type="char">Port Inboard Engine</DisplayName>
+        <Type type="char">BluffBody</Type>
+        <Parent type="char">PortWing</Parent>
+        <Children type="char"></Children>
+        <!-- Locating the origin of the component -->
+        <!-- <Origin type="double" attr="row,numel,3">10,12,5.715</Origin>-->
+        <SOffset type="double" attr="scalar,nonnegative">0.21</SOffset>
+        <XOffset type="double" attr="scalar">-2.0</XOffset>
+        <YOffset type="double" attr="scalar">0.0</YOffset>
+        <ZOffset type="double" attr="scalar">-1.2</ZOffset>
+        <!-- Common Properties -->			
+        <Radius type="double" attr="row">1.1,1.1</Radius>
+        <!-- Length Set -->
+        <Length type="double" attr="scalar">4</Length>
+        <Eta type="double" attr="row">0,1</Eta>
+        <!-- Coordinate Set -->
+        <XData type="double"></XData>
+        <YData type="double"></YData>
+        <ZData type="double"></ZData>
+    </Engine_2>
+</Aircraft>
+<!-- Loadcases -->
+<LoadCases type="import">sugar_load_cases.xml</LoadCases>
+</Framework>

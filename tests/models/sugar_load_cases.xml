@@ -1,0 +1,61 @@
+<LoadCases>
+	<!-- One minus-cosine -->
+    <LoadCase>
+        <LoadCaseType>One-Minus-Cosine</LoadCaseType>	
+        <Name type="char">1MC_M_0.761_H_7160</Name>
+        <Mach type="double">0.761</Mach>
+        <Altitude type="double">7160</Altitude>
+        <LoadFactor type="double">2.5</LoadFactor>
+        <FuelFraction type="double">1.0</FuelFraction>
+        <CsDeflection type="double">-15,0,0,0,0,0,0</CsDeflection>
+        <PayloadMass type="double">20000</PayloadMass>
+        <GustLength type="double" attr="row, vector">10,20,30,40,50,60,70,80,90,100,110</GustLength>
+        <GustDirection type="double" attr="row, vector">0,0,1</GustDirection>
+    </LoadCase>
+	<!-- Continuous Turbulence -->
+    <LoadCase>
+        <LoadCaseType>Continuous-Turbulence</LoadCaseType>
+        <Name type="char">CT_M_0.761_H_7160</Name>
+        <Mach type="double">0.761</Mach>
+        <Altitude type="double">7160</Altitude>
+        <LoadFactor type="double">1.0</LoadFactor>
+        <FuelFraction type="double">0.5</FuelFraction>	
+        <CsDeflection type="double">-15,0,0,0,0,0,0</CsDeflection>
+        <PayloadMass type="double">20000</PayloadMass>		
+        <TurbulenceScale>6500</TurbulenceScale>
+        <SpectrumType>Dryden</SpectrumType>
+    </LoadCase>
+	<!-- 1g Cruise -->
+    <LoadCase>
+        <LoadCaseType>Cruise Design Case</LoadCaseType>	
+        <Name type="char">1g_cruise</Name>
+        <Mach type="double">0.761</Mach>
+        <Altitude type="double">7160</Altitude>
+        <LoadFactor type="double">1.0</LoadFactor>
+        <FuelFraction type="double">1.0</FuelFraction>
+        <CsDeflection type="double">-15,0,0,0,0,0,0</CsDeflection>
+        <PayloadMass type="double">20000</PayloadMass>
+    </LoadCase>
+	<!-- 2.5g Manoeuvre -->
+    <LoadCase>
+        <LoadCaseType>Manoeuvre</LoadCaseType>	
+        <Name type="char">2.5g_cruise</Name>
+        <Mach type="double">0.761</Mach>
+        <Altitude type="double">7160</Altitude>
+        <LoadFactor type="double">2.5</LoadFactor>
+        <FuelFraction type="double">1.0</FuelFraction>
+        <CsDeflection type="double">-15,0,0,0,0,0,0</CsDeflection>
+        <PayloadMass type="double">20000</PayloadMass>
+    </LoadCase>
+	<!-- 1.5g Manoeuvre -->
+    <LoadCase>
+        <LoadCaseType>Manoeuvre</LoadCaseType>	
+        <Name type="char">1.5g_cruise</Name>
+        <Mach type="double">0.761</Mach>
+        <Altitude type="double">7160</Altitude>
+        <LoadFactor type="double">1.5</LoadFactor>
+        <FuelFraction type="double">1.0</FuelFraction>
+        <CsDeflection type="double">-15,0,0,0,0,0,0</CsDeflection>
+        <PayloadMass type="double">20000</PayloadMass>
+    </LoadCase>
+</LoadCases>

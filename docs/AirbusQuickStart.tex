@@ -1,0 +1,186 @@
+\addcontentsline{toc}{section}{Quick Start Guide (Airbus)}
+\section*{Quick Start Guide (Airbus)}
+
+This guide is intended as a brief introduction to the AWI framework. This guide will explain how to:
+
+\begin{itemize}
+{\indentitem \item{Obtain the AWI framework files}}
+{\indentitem\item{Start the AWI framework}}
+{\indentitem\item{Import a FAME aircraft model into the AWI framework}}
+{\indentitem\item{Make changes to the model}}
+{\indentitem\item{Run an aeroelastic analysis}}
+{\indentitem\item{View results}}
+{\indentitem\item{Export results}}
+\end{itemize}
+
+This document is a step-by-step guide of how to interact with AWI via the GUI. It will not discuss how to run AWI programmatically although this is arguably the more powerful use of the framework. 
+
+There are two guides in this document:
+\begin{enumerate}
+{\indentitem\item A written guide that provides the bare minimum of detail and should be used as a prompt for users who are familiar with AWI.}
+{\indentitem\item An annotated guide that uses screenshots to explain each step of the process. User’s who are unfamiliar with AWI should use this guide to help them get started.}
+\end{enumerate}
+
+Some assumptions are made about the user and the machine that they are working on. These assumptions are:
+
+\begin{itemize}
+{\indentitem\item The user is an employee of Airbus and has a working knowledge of the FAME-W analysis tool}
+{\indentitem\item The user’s machine is running on a Windows operating system}
+{\indentitem\item The user has already downloaded and installed a valid installation of MATLAB which is version 2015b or later.}
+{\indentitem\item The user understands how to open MATLAB and run a file.}
+\end{itemize}
+
+\subsection*{Accessing the AWI files}
+
+The source files for AWI are stored on the Airbus iShare portal. Mr Sylvain Boye\footnote{Sylvain Boye is a member of Airbus FPO, Filton, UK. Contactable at sylvain.boye@airbus.com} is the owner of the iShare and should be contacted if access is required. The files are stored at $<$INSERT FOLDER PATH HERE$>$ Simply download the .zip and extract the files to a folder location of your choice. 
+
+At this point it is important that the user understands that the copy of the AWI framework that is held by Airbus is not version controlled. This has two main implications:
+\begin{enumerate}
+{\indentitem\item If any changes are made to the source files on the user’s machine they will be localised to the user’s machine, i.e. changes will not be propagated back to the iShare. The Airbus iShare is not a version-control system and the code available on the iShare is to be considered constant between any updates from the developers at the University of Bristol.}
+{\indentitem\item Any changes that the user makes to the source files will cause a divergence in the codebase away from the version-controlled (original) code held by the University of Bristol. Therefore, it is not recommended that the user make any changes to the AWI source code as this will cause the software to become unreliable and will make debugging any issues very difficult. In future releases the source code may be obfuscated (p-coded) and released as a MATLAB package to protect the integrity of the AWI framework.}
+\end{enumerate}
+
+Written Step-by-Step Guide
+\begin{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% START MATLAB
+	\item \textbf{Start MATLAB}
+	\begin{enumerate}
+		\item Launch MATLAB via the Windows start-menu or using a desktop shortcut.
+	\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% NAVIGATE TO THE AWI FILE LOCATION
+	\item \textbf{Navigate to the AWI file location}
+	\begin{enumerate}
+		\item Use the folder browser on the left-hand side of the MATLAB window to navigate to the folder where the AWI files are located. 
+	\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% START AWI
+	\item \textbf{Start AWI} 
+	\begin{enumerate}
+		\item Type ``AWI'' in the MATLAB Command Window and press ``Enter'' to start AWI.
+	\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% IMPORT A FAME MODEL
+	\item \textbf{Import a FAME model} 
+	\begin{enumerate}
+		\item Using the menu-strip at the top of the GUI select File$\rightarrow$Import. (N.B. Previously imported models can be imported using File$\rightarrow$Reimport)
+		\item Using the file selection window, navigate to the location of the FAME model that you wish to import, select the .fm4 file and click ``Open''. (N.B. Make sure the file specification is set to ``FAME Input files (*.fm4)'' using the drop-down menu above the ``Open'' button)
+		\item If the import is successfully initialised a progress window will open which provides details of the actions being performed. These messages can be reviewed later by viewing the AWI ``Audit Trail''. This can be done by selecting Audit trail$\rightarrow$Show in the menu strip at the top of the GUI.
+		\item Once the import process is complete the progress window will close, and a drawing of the model will be shown in the GUI. At this point, the user is free to view different aspects of the model, interrogate the model properties and make any necessary changes. Further details are provided in the Annotated Step-by-Step Guide.
+	\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MAKE CHANGES TO THE MODEL
+	\item \textbf{Make changes to the model}
+	\begin{enumerate}
+		\item Changes to the model are made using the ``Property View'' which is accessible in two ways:
+		\begin{enumerate}
+			\item Through the object context menu
+			\begin{itemize}
+				\item Using the ``Tree View'' on the left-hand side of the AWI GUI, select the object you wish to edit, right-click to bring up the context menu and then navigate to Edit $\rightarrow$ Properties $\rightarrow$ This.  
+				\item This version of the Property View is not dynamic, therefore the user is required to select ``Apply'' to propagate changes to the model which will then trigger a rebuild.
+			\end{itemize}
+			\item Through the GUI context menu
+			\begin{itemize}
+				\item Right-click on any of the top-level tabs in the GUI and select Add View $\rightarrow$ Properties.
+				\item This version of the Property View is dynamic, meaning that any changes are automatically propagated to the model which is then rebuilt in real-time. 
+			\end{itemize}
+		\end{enumerate}
+		\item The user should exercise caution when making changes as it is possible to drastically modify the model and cause a disparity between the geometry and the underlying structural properties of the model which has serious implications for the aeroelastic analysis and aircraft sizing modules.
+	\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% RUN AN AEROELASTIC ANALYSIS
+	\item \textbf{Run an aeroelastic analysis}
+	\begin{enumerate}
+		\item To run an aeroelastic analysis the AWI session must contain a valid aircraft model and at least one valid load case. Furthermore, when analysing FAME models, the user must have imported the FAME results data containing the aircraft mass and stiffness distribution.
+		\item \textbf{Running an aeroelastic trim analysis}
+		\begin{enumerate}
+			\item To initiate an aeroelastic trim analysis select Analyse $\rightarrow$ Aeroelastic $\rightarrow$ Trim using the menu strip at the top of the GUI.
+			\item Selecting this option will automatically open a new view in the GUI called ``TrimAnalysis''. 
+			\item Using the drop-down menu on the right-hand side of the new view, select the load case and beam model for analysis by the trim solver \footnote{A beam model defines the various mass and stiffness properties of the aircraft. Multiple beam models may be present in the AWI session if the user has run a sizing analysis or has imported multiple FAME models.}. 
+			\begin{itemize}
+				\item N.B. The user is automatically given the option of all available ``manoeuvre'' load cases in the AWI session. If, for some reason, there are no load cases of type ``manoeuvre'' then the user will be unable to run a trim analysis.
+			\end{itemize}
+			\item Select ``Trim…'' to run the trim solver. N.B. By default the trim solver will use the aircraft pitch angle and the elevator to balance the aircraft weight and pitching moment.
+			\item Whilst the trim solver is running the user can monitor the progress of the solution and view the state of the model, including: the residual norm, the aircraft deflections and the control surface deflections.
+			\item Once the trim solver has achieved convergence the TrimAnalysis view will be populated by some preliminary results and a new result set will be added to the AWI session.  This can be viewed in the tree view by expanding the ``Results Sets'' node and looking under the relevant beam model.
+		\end{enumerate}
+		\item \textbf{Running a 1-minus cosine gust analysis}
+		\begin{enumerate}
+			\item To initiate a 1-minus cosine analysis select Analyse $\rightarrow$ Aeroelastic $\rightarrow$ Gust using the menu strip at the top of the GUI.
+			\item Selecting this option will automatically open a new view in the GUI called ``GustAnalysis''. 
+			\item Using the drop-down menu on the right-hand side of the new view, select the load case, beam model and the trim result for analysis by the gust solver.
+			\begin{itemize}
+				\item N.B. The user is automatically given the option of all available ``one-minus-cosine'' load cases in the AWI session. If, for some reason, there are no load cases of type ``one-minus-cosine'' then the user will be unable to run a gust analysis.
+				\item A trim result is required to allow the gust solver to start the model from its deformed/trimmed shape. This represents an important difference from traditional linear tools as the case where nonlinearities are included the gust response is dependent on the initial conditions of the system, i.e. the initial trimmed shape.
+				\item The trim condition will be calculated automatically if no trim result is present that matches the specified flight-point.
+				\item If there are no ``one-minus-cosine'' load cases in the AWI session the user can create their own. For further details see the Annotated Step-by-Step Guide.
+			\end{itemize}
+			\item Select ``Analyse…'' to run the gust solver.
+			\item Once the gust solver has finished the GustAnalysis view will be populated by some preliminary results and a new result set will be added to the AWI session.  This can be viewed in the tree view by expanding the ``Results Sets'' node and looking under the relevant beam model.
+			\begin{itemize}
+				\item As the gust analysis is a transient analysis there is a significant amount of data that is generated. These results are split into two categories:
+				\begin{enumerate}
+					\item \textbf{Static Results} - For every gust length considered, the maximum and minimum loads with respect to time are calculated for every spanwise position along each beam in the analysis model. These results are added to the ``Static Results'' collector in the tree view.				
+					\item \textbf{Transient Results} - For every gust length considered, the raw time domain data is retained and added to the ``Transient Results'' collector in the tree view.
+				\end{enumerate}
+			\end{itemize}
+		\end{enumerate}
+	\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% VIEW RESULTS
+	\item \textbf{View Results}
+	\begin{enumerate}
+		\item \textbf{Add a ``Beam Results Viewer'' view} - In order to view the results, the appropriate view must be added to the GUI. Right click on any of the top-level GUI tab pages to bring up the AWI View Manager context menu and select Add View $\rightarrow$ Beam Results Viewer.
+		\begin{enumerate}
+			\item \textbf{N.B.} The ``Static Results View'' shows results data which is independent of time. These results are either associated with manoeuvre load cases or are the maximum and minimum envelope loads from a gust analysis. The results viewer allows the user to view the distribution of a results quantity over the span of a beam, however, it will not show the user any time history data.
+		\end{enumerate}	
+		\item \textbf{Select the results} –  - 
+		\begin{enumerate}
+			\item \textbf{Results Sets (Multi-Select)} - A results set represents the output from a single analysis. The Beam Results Viewer allows quantities from multiple results sets to be viewed at once.
+			\item \textbf{Beam Elements (Single-Select)} - After selecting a result set the user is offered a selection of all the common beam elements for which a results quantity has been defined. When considering results from a FAME model this will typically be just the starboard wing, however, if the user runs an aeroelastic analysis using the AWI framework then there will be results for other ``beams'' in the model such as the VTP, HTP, etc.
+			\item \textbf{Results Types (Single-Select)}  - After selecting a result set and a beam element to view the results over, the user will be offered a choice of all results types in the chosen result set. A results type defines a group of results and is dependent on what type of result set has been selected. For instance, an aeroelastic result set will have various aerodynamic and structural results quantities defined, however, a sizing result will contain information about the box thicknesses etc. 
+			\item \textbf{Results Quantities (Multi-Select)} - After selecting the results type the user will be offered a selection of all results quantities in this results type. The user is able to select any number of results
+		\end{enumerate}
+		\item \textbf{Customise the display}
+		\item \textbf{Calculate the loads envelope}
+	\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% EXPORT RESULTS
+	\item \textbf{Export Results}
+	\begin{enumerate}
+		\item \textbf{Add a ``Static Results'' view} - An instance of the ``Static Results View'' is required to initiate the export process.
+		\item \textbf{Select ``Export Results...''} - Click the ``Export Results…'' push button to open up the ``AWI Export Manager''.
+		\item \textbf{Configure export specification} - The following options must be set before the results can be exported:
+		\begin{enumerate}
+			\item \textbf{Results Selection (Multi-Select)} - The export manager will honour the current selection of results sets, however, this is easily changed by the user if a different selection is required. Simply highlight the results in the list-box or click ``Select All'' to select all results sets.
+			\item \textbf{Beam Elements (Multi-Select)} - The user must select the beams over which the results data is defined.
+			\item \textbf{Results Types (Multi-Select)} - The user must select the results types to be exported. Every results quantity from the selected results types will be exported.
+			\item \textbf{Export Directory} – The use must select a folder location for the results to be saved to. The full directory path can be pasted into the edit box or the user can click the `open' button to select a directory using the Windows Explorer.
+			\item \textbf{Export File Format} - The user must select the format for exporting the results. The number of files that are generated is dictated by this option.
+			\begin{itemize}
+				\item \textbf{CSV (.csv)} - This option is much quicker but generates more files. One file is generated per results quantity (for each beam) and each file contains the data for that results quantity across all selected results sets.
+				\item \textbf{Excel (.xslx)} - This option is slower and generates fewer files. One file is generated per results type and each results quantity is defined on a separate (named) sheet in the excel workbook. 
+				\begin{enumerate}
+					\item The slower speed is attributed to using MATLAB’s inbuilt `xlswrite' function as opposed to a vectorised call to `fprintf' which is what the csv-exporter uses.
+				\end{enumerate}
+				\item \textbf{N.B.} - The output files are automatically named based on the beam name and results type/quantity. If a file of the same name (and file extension) already exists in the export directory, then the new results will be appended to that file.
+			\end{itemize}
+		\end{enumerate}
+		\item \textbf{Export the data} - Hit ``Export'' to initiate the export process. A progress dialogue box will open during the export process and will close once the last file has been written. 
+	\end{enumerate}
+\end{enumerate}
+\subsection*{Annotated Step-by-Step Guide}
+
+\newpage
+\begin{landscape}
+\subsubsection{Navigate to the AWI files and start AWI}
+\end{landscape}
+
+\newpage
+\begin{landscape}
+\subsubsection{The AWI GUI}
+This is the AWI opening screen
+
+\includegraphics[width=1.3\textwidth]{AWIGUI.eps}
+\end{landscape}
+
+\newpage
+\begin{landscape}
+\subsubsection{Import a FAME model}
+Using the menu strip, select File>Import to launch the file browser window. Navigate the FAME model that you wish to import and select the .*fm4 file.
+
+\includegraphics[width=1.3\textwidth]{ImportFame.eps}
+\end{landscape}

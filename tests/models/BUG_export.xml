@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Framework>
+   <Name>AWI Framework</Name>
+   <Type>Framework</Type>
+   <Description type="cellstr">{}</Description>
+   <DisplayName>AWI Framework</DisplayName>
+   <AuditTrail type="table">
+      <table>
+         <User type="cellstr">{dc14591}</User>
+         <Object type="cellstr">{AWI Framework}</Object>
+         <What type="cellstr">{Imported content from 'E:\GITDirectories\UoB_framework\Models\BUG.xml'}</What>
+      </table>
+   </AuditTrail>
+   <DynamicProperties type="cellstr">{}</DynamicProperties>
+   <ActiveSetDisplayName>none</ActiveSetDisplayName>
+   <ActiveSetMode>auto</ActiveSetMode>
+   <BuildStatus/>
+   <Mass type="double">0</Mass>
+   <TotalMass type="double">0</TotalMass>
+   <Origin type="double">[]</Origin>
+   <XOffset type="double">0</XOffset>
+   <YOffset type="double">0</YOffset>
+   <ZOffset type="double">0</ZOffset>
+   <SOffset type="double">0</SOffset>
+   <SOffsetFlag>R</SOffsetFlag>
+   <Aircraft>
+      <Name>Aircraft</Name>
+      <Type>Aircraft</Type>
+      <Description type="cellstr">{}</Description>
+      <DisplayName>Aircraft</DisplayName>
+      <DynamicProperties type="cellstr">{}</DynamicProperties>
+      <ActiveSetDisplayName>none</ActiveSetDisplayName>
+      <ActiveSetMode>auto</ActiveSetMode>
+      <BuildStatus/>
+      <Mass type="double">0</Mass>
+      <TotalMass type="double">0</TotalMass>
+      <Origin type="double">[]</Origin>
+      <XOffset type="double">0</XOffset>
+      <YOffset type="double">0</YOffset>
+      <ZOffset type="double">0</ZOffset>
+      <SOffset type="double">0</SOffset>
+      <SOffsetFlag>R</SOffsetFlag>
+      <MTOM type="double">800000</MTOM>
+      <MZFM type="double">600000</MZFM>
+      <MLM type="double">1000000</MLM>
+      <OEM type="double">400000</OEM>
+      <Trim>-none-</Trim>
+      <Entity>
+         <Name>Mesh</Name>
+         <Type>Entity</Type>
+         <Description type="cellstr">{}</Description>
+         <DynamicProperties type="table">
+            <table>
+               <Name type="cellstr">{BeamDensity,ShellDensity}</Name>
+               <Value type="double">[0.3;0.1]</Value>
+            </table>
+         </DynamicProperties>
+         <ActiveSetDisplayName>none</ActiveSetDisplayName>
+         <ActiveSetMode>auto</ActiveSetMode>
+         <BuildStatus/>
+      </Entity>
+      <BluffBody>
+         <Name>Fuselage</Name>
+         <Type>BluffBody</Type>
+         <Description type="cellstr">{This is the fuselage.}</Description>
+         <DisplayName>Fuselage</DisplayName>
+         <DynamicProperties type="cellstr">{}</DynamicProperties>
+         <ActiveSetDisplayName>Length Set</ActiveSetDisplayName>
+         <ActiveSetMode>auto</ActiveSetMode>
+         <BuildStatus>built using active set 'lSet'</BuildStatus>
+         <Mass type="double">0</Mass>
+         <TotalMass type="double">0</TotalMass>
+         <Origin type="double">[0 0 3.858]</Origin>
+         <XOffset type="double">0</XOffset>
+         <YOffset type="double">0</YOffset>
+         <ZOffset type="double">0</ZOffset>
+         <SOffset type="double">0</SOffset>
+         <SOffsetFlag>R</SOffsetFlag>
+         <Length type="double">38.0238</Length>
+         <Eta type="double">[0 0.005268 0.010536 0.015805 0.021073 0.026342 0.03161 0.036879 0.042147 0.047415 0.052684 0.057952 0.063221 0.068489 0.073758 0.079026 0.084294 0.089563 0.094831 0.1001 0.411022 0.721944 0.736578 0.751213 0.765847 0.780482 0.795117 0.809751 0.824386 0.83902 0.853655 0.868289 0.882924 0.897558 0.912193 0.926827 0.941462 0.956096 0.970731 0.985365 1]</Eta>
+         <Radius type="double">[0 0.384403 0.565081 0.707928 0.830682 0.940375 1.04067 1.13377 1.22112 1.30374 1.38237 1.45758 1.52981 1.59941 1.66667 1.73182 1.79508 1.8566 1.91653 1.975 2.11455 2.11455 2.04234 1.96868 1.89345 1.81653 1.73774 1.65692 1.57385 1.48825 1.39983 1.30819 1.21282 1.11308 1.0081 0.896641 0.776853 0.645724 0.497601 0.31873 0]</Radius>
+         <DeltaZ type="double">[0 0]</DeltaZ>
+         <DeltaZ_eta type="double">[0 1]</DeltaZ_eta>
+         <XData type="double">[0 0.2003093784 0.4006187568 0.600966159 0.8012755374 1.0016229396 1.201932318 1.4022797202 1.6025890986 1.802898477 2.0032458792 2.2035552576 2.4039026598 2.6042120382 2.8045594404 3.0048688188 3.2051781972 3.4055255994 3.6058349778 3.80618238 15.6286183236 27.4510542672 28.0074945564 28.5639728694 29.1204131586 29.6768914716 30.2333697846 30.7898100738 31.3462883868 31.902728676 32.459206989 33.0156472782 33.5721255912 34.1285658804 34.6850441934 35.2414844826 35.7979627956 36.3544030848 36.9108813978 37.467321687 38.0238]</XData>
+         <YData type="double">[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]</YData>
+         <ZData type="double">[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]</ZData>
+         <FaceColor type="double">[0 1 0]</FaceColor>
+         <FaceAlpha type="double">0.25</FaceAlpha>
+         <FaceLighting>gouraud</FaceLighting>
+         <LiftingSurface>
+            <Name>StbdWing</Name>
+            <Type>LiftingSurface</Type>
+            <Description type="cellstr">{This is the starboard wing.}</Description>
+            <DisplayName>Starboard Wing</DisplayName>
+            <DynamicProperties type="table">
+               <table>
+                  <Name type="cellstr">{A,A_eta,A_var,A_,I11,I11_eta,I11_var,I11_,I22,I22_eta,I22_var,I22_,I12,I12_eta,I12_var,I12_,J,J_eta,J_var,J_,NSM,NSM_eta,NSM_var,NSM_,NSI,NSI_eta,NSI_var,NSI_,SCy,SCy_eta,SCy_var,SCy_,SCz,SCz_eta,SCz_var,SCz_,NAy,NAy_eta,NAy_var,NAy_,NAz,NAz_eta,NAz_var,NAz_,CMy,CMy_eta,CMy_var,CMy_,CMz,CMz_eta,CMz_var,CMz_,Chord,Chord_eta,Chord_var,Chord_,BeamLoc,BeamLoc_eta,BeamLoc_var,BeamLoc_,Sweep,Sweep_eta,Sweep_var,Sweep_,Dihedral,Dihedral_eta,Dihedral_var,Dihedral_,AoA,AoA_eta,AoA_var,AoA_,tc,tc_eta,tc_var,tc_,LESweep,LESweep_eta,LESweep_var,LESweep_,TESweep,TESweep_eta,TESweep_var,TESweep_,SweepType,DihedralType,AoAType,Rib_pitch,Stringer_pitch}</Name>
+               </table>
+            </DynamicProperties>
+            <ActiveSetDisplayName>Parametric Set</ActiveSetDisplayName>
+            <ActiveSetMode>auto</ActiveSetMode>
+            <BuildStatus>built using active set 'pSet'</BuildStatus>
+            <Mass type="double">0</Mass>
+            <TotalMass type="double">0</TotalMass>
+            <Origin type="double">[]</Origin>
+            <XOffset type="double">0</XOffset>
+            <YOffset type="double">0</YOffset>
+            <ZOffset type="double">2</ZOffset>
+            <SOffset type="double">0.4914</SOffset>
+            <SOffsetFlag>R</SOffsetFlag>
+            <A type="double">[0 0]</A>
+            <I11 type="double">[0 0]</I11>
+            <I22 type="double">[0 0]</I22>
+            <I12 type="double">[0 0]</I12>
+            <J type="double">[0 0]</J>
+            <NSM type="double">[0 0]</NSM>
+            <NSI type="double">[0 0]</NSI>
+            <SCy type="double">[0 0]</SCy>
+            <SCz type="double">[0 0]</SCz>
+            <NAy type="double">[0 0]</NAy>
+            <NAz type="double">[0 0]</NAz>
+            <CMy type="double">[0 0]</CMy>
+            <CMz type="double">[0 0]</CMz>
+            <Chord type="double">[3.276 3.276 2.905 1.146]</Chord>
+            <BeamLoc type="double">[0.5 0.5 0.5 0.5]</BeamLoc>
+            <Sweep type="double">[0 12.52 12.52]</Sweep>
+            <Dihedral type="double">[-1 -1]</Dihedral>
+            <AoA type="double">[3 3]</AoA>
+            <tc type="double">[0 0]</tc>
+            <LESweep type="double">[0 0]</LESweep>
+            <TESweep type="double">[0 0]</TESweep>
+            <LineColor type="double">[]</LineColor>
+            <LineStyle type="double">[]</LineStyle>
+            <FaceColor type="double">[0 1 1]</FaceColor>
+            <FaceAlpha type="double">0.25</FaceAlpha>
+            <SpanVector>Y</SpanVector>
+            <Aerofoil type="cellstr">{NACA0016,NACA0008}</Aerofoil>
+            <Aerofoil_eta type="double">[0 1]</Aerofoil_eta>
+            <BeamLoc_eta type="double">[0 0.049 0.577 1]</BeamLoc_eta>
+            <Span type="double">25.899</Span>
+            <Sweep_eta type="double">[0 0.049 1]</Sweep_eta>
+            <SweepLoc type="double">0.5</SweepLoc>
+            <Dihedral_eta type="double">[0 1]</Dihedral_eta>
+            <AoA_eta type="double">[0 1]</AoA_eta>
+            <Chord_eta type="double">[0 0.049 0.577 1]</Chord_eta>
+            <LE type="double">[17.04689532 17.04689532 20.269005468229 23.5812442801624;0 1.269051 14.943723 25.899;5.94384394246562 5.9216925748634 5.67327864417432 5.43596093095328]</LE>
+            <TE type="double">[20.32289532 20.32289532 23.174005468229 24.7272442801624;0 1.269051 14.943723 25.899;5.77215605753438 5.75000468993216 5.52103404535708 5.37590161589491]</TE>
+            <TipParent type="double">[]</TipParent>
+            <TipNormPos type="double">[]</TipNormPos>
+            <TipFlag>R</TipFlag>
+            <TipXOffset type="double">0</TipXOffset>
+            <TipYOffset type="double">0</TipYOffset>
+            <TipZOffset type="double">0</TipZOffset>
+            <RootChord type="double">[]</RootChord>
+            <LESweep_eta type="double">[0 1]</LESweep_eta>
+            <TESweep_eta type="double">[0 1]</TESweep_eta>
+            <Spar>
+               <Name>StbdWingFrontSpar</Name>
+               <Type>Spar</Type>
+               <Description type="cellstr">{This is the front spar of the starboard wing.}</Description>
+               <DisplayName>Starboard Wing - Front Spar</DisplayName>
+               <XLoc type="double">[0.15 0.15]</XLoc>
+               <Eta type="double">[0 1]</Eta>
+               <DynamicProperties type="cellstr">{}</DynamicProperties>
+               <ActiveSetDisplayName>none</ActiveSetDisplayName>
+               <ActiveSetMode>auto</ActiveSetMode>
+               <BuildStatus/>
+               <Mass type="double">0</Mass>
+               <TotalMass type="double">0</TotalMass>
+               <Origin type="double">[]</Origin>
+               <XOffset type="double">0</XOffset>
+               <YOffset type="double">0</YOffset>
+               <ZOffset type="double">0</ZOffset>
+               <SOffset type="double">0</SOffset>
+               <SOffsetFlag>R</SOffsetFlag>
+            </Spar>
+            <Spar>
+               <Name>StbdWingRearSpar</Name>
+               <Type>Spar</Type>
+               <Description type="cellstr">{This is the rear spar of the starboard wing.}</Description>
+               <DisplayName>Starboard Wing - Rear Spar</DisplayName>
+               <XLoc type="double">[0.65 0.65]</XLoc>
+               <Eta type="double">[0 1]</Eta>
+               <DynamicProperties type="cellstr">{}</DynamicProperties>
+               <ActiveSetDisplayName>none</ActiveSetDisplayName>
+               <ActiveSetMode>auto</ActiveSetMode>
+               <BuildStatus/>
+               <Mass type="double">0</Mass>
+               <TotalMass type="double">0</TotalMass>
+               <Origin type="double">[]</Origin>
+               <XOffset type="double">0</XOffset>
+               <YOffset type="double">0</YOffset>
+               <ZOffset type="double">0</ZOffset>
+               <SOffset type="double">0</SOffset>
+               <SOffsetFlag>R</SOffsetFlag>
+            </Spar>
+            <Entity>
+               <Name>Stringer</Name>
+               <Type>Entity</Type>
+               <Description type="cellstr">{}</Description>
+               <DynamicProperties type="table">
+                  <table>
+                     <Name type="cellstr">{Pitch}</Name>
+                     <Value type="double">0.2</Value>
+                  </table>
+               </DynamicProperties>
+               <ActiveSetDisplayName>none</ActiveSetDisplayName>
+               <ActiveSetMode>auto</ActiveSetMode>
+               <BuildStatus/>
+            </Entity>
+            <ControlSurface>
+               <Name>Ail1</Name>
+               <Type>ControlSurface</Type>
+               <Description type="cellstr">{}</Description>
+               <DisplayName>Inboard Aileron</DisplayName>
+               <Eta type="double">[0.3 0.45]</Eta>
+               <xLE type="double">[0.79 0.79]</xLE>
+               <xTE type="double">[1 1]</xTE>
+               <Max_def type="double">30</Max_def>
+               <Max_rate type="double">80</Max_rate>
+               <DynamicProperties type="cellstr">{}</DynamicProperties>
+               <ActiveSetDisplayName>none</ActiveSetDisplayName>
+               <ActiveSetMode>auto</ActiveSetMode>
+               <BuildStatus/>
+               <Mass type="double">0</Mass>
+               <TotalMass type="double">0</TotalMass>
+               <Origin type="double">[]</Origin>
+               <XOffset type="double">0</XOffset>
+               <YOffset type="double">0</YOffset>
+               <ZOffset type="double">0</ZOffset>
+               <SOffset type="double">0</SOffset>
+               <SOffsetFlag>R</SOffsetFlag>
+               <FaceColor>r</FaceColor>
+               <FaceAlpha type="double">1</FaceAlpha>
+            </ControlSurface>
+            <ControlSurface>
+               <Name>Ail2</Name>
+               <Type>ControlSurface</Type>
+               <Description type="cellstr">{}</Description>
+               <DisplayName>Midboard Aileron</DisplayName>
+               <Eta type="double">[0.55 0.7]</Eta>
+               <xLE type="double">[0.79 0.79]</xLE>
+               <xTE type="double">[1 1]</xTE>
+               <Max_def type="double">30</Max_def>
+               <Max_rate type="double">80</Max_rate>
+               <DynamicProperties type="cellstr">{}</DynamicProperties>
+               <ActiveSetDisplayName>none</ActiveSetDisplayName>
+               <ActiveSetMode>auto</ActiveSetMode>
+               <BuildStatus/>
+               <Mass type="double">0</Mass>
+               <TotalMass type="double">0</TotalMass>
+               <Origin type="double">[]</Origin>
+               <XOffset type="double">0</XOffset>
+               <YOffset type="double">0</YOffset>
+               <ZOffset type="double">0</ZOffset>
+               <SOffset type="double">0</SOffset>
+               <SOffsetFlag>R</SOffsetFlag>
+               <FaceColor>r</FaceColor>
+               <FaceAlpha type="double">1</FaceAlpha>
+            </ControlSurface>
+            <ControlSurface>
+               <Name>Ail3</Name>
+               <Type>ControlSurface</Type>
+               <Description type="cellstr">{}</Description>
+               <DisplayName>Outboard Aileron</DisplayName>
+               <Eta type="double">[0.8 0.9]</Eta>
+               <xLE type="double">[0.79 0.79]</xLE>
+               <xTE type="double">[1 1]</xTE>
+               <Max_def type="double">30</Max_def>
+               <Max_rate type="double">80</Max_rate>
+               <DynamicProperties type="cellstr">{}</DynamicProperties>
+               <ActiveSetDisplayName>none</ActiveSetDisplayName>
+               <ActiveSetMode>auto</ActiveSetMode>
+               <BuildStatus/>
+               <Mass type="double">0</Mass>
+               <TotalMass type="double">0</TotalMass>
+               <Origin type="double">[]</Origin>
+               <XOffset type="double">0</XOffset>
+               <YOffset type="double">0</YOffset>
+               <ZOffset type="double">0</ZOffset>
+               <SOffset type="double">0</SOffset>
+               <SOffsetFlag>R</SOffsetFlag>
+               <FaceColor>r</FaceColor>
+               <FaceAlpha type="double">1</FaceAlpha>
+            </ControlSurface>
+            <Entity>
+               <Name>Material</Name>
+               <Type>Entity</Type>
+               <Description type="cellstr">{}</Description>
+               <DynamicProperties type="table">
+                  <table>
+                     <Name type="cellstr">{ID,Tensile_yield,Shear_yield,Density,PoissonsRatio}</Name>
+                  </table>
+               </DynamicProperties>
+               <ActiveSetDisplayName>none</ActiveSetDisplayName>
+               <ActiveSetMode>auto</ActiveSetMode>
+               <BuildStatus/>
+            </Entity>
+            <LiftingSurface>
+               <Name>PortWing</Name>
+               <Type>LiftingSurface</Type>
+               <Description type="cellstr">{This is the port wing.}</Description>
+               <DisplayName>Port Wing</DisplayName>
+               <DynamicProperties type="table">
+                  <table>
+                     <Name type="cellstr">{A,A_eta,A_var,A_,I11,I11_eta,I11_var,I11_,I22,I22_eta,I22_var,I22_,I12,I12_eta,I12_var,I12_,J,J_eta,J_var,J_,NSM,NSM_eta,NSM_var,NSM_,NSI,NSI_eta,NSI_var,NSI_,SCy,SCy_eta,SCy_var,SCy_,SCz,SCz_eta,SCz_var,SCz_,NAy,NAy_eta,NAy_var,NAy_,NAz,NAz_eta,NAz_var,NAz_,CMy,CMy_eta,CMy_var,CMy_,CMz,CMz_eta,CMz_var,CMz_,Chord,Chord_eta,Chord_var,Chord_,BeamLoc,BeamLoc_eta,BeamLoc_var,BeamLoc_,Sweep,Sweep_eta,Sweep_var,Sweep_,Dihedral,Dihedral_eta,Dihedral_var,Dihedral_,AoA,AoA_eta,AoA_var,AoA_,tc,tc_eta,tc_var,tc_,LESweep,LESweep_eta,LESweep_var,LESweep_,TESweep,TESweep_eta,TESweep_var,TESweep_,SweepType,DihedralType,AoAType,Rib_pitch,Stringer_pitch}</Name>
+                  </table>
+               </DynamicProperties>
+               <ActiveSetDisplayName>Parametric Set</ActiveSetDisplayName>
+               <ActiveSetMode>auto</ActiveSetMode>
+               <BuildStatus>built using active set 'pSet'</BuildStatus>
+               <Mass type="double">0</Mass>
+               <TotalMass type="double">0</TotalMass>
+               <Origin type="double">[]</Origin>
+               <XOffset type="double">0</XOffset>
+               <YOffset type="double">0</YOffset>
+               <ZOffset type="double">0</ZOffset>
+               <SOffset type="double">0</SOffset>
+               <SOffsetFlag>R</SOffsetFlag>
+               <A type="double">[0 0]</A>
+               <I11 type="double">[0 0]</I11>
+               <I22 type="double">[0 0]</I22>
+               <I12 type="double">[0 0]</I12>
+               <J type="double">[0 0]</J>
+               <NSM type="double">[0 0]</NSM>
+               <NSI type="double">[0 0]</NSI>
+               <SCy type="double">[0 0]</SCy>
+               <SCz type="double">[0 0]</SCz>
+               <NAy type="double">[0 0]</NAy>
+               <NAz type="double">[0 0]</NAz>
+               <CMy type="double">[0 0]</CMy>
+               <CMz type="double">[0 0]</CMz>
+               <Chord type="double">[3.276 3.276 2.905 1.146]</Chord>
+               <BeamLoc type="double">[0.5 0.5 0.5 0.5]</BeamLoc>
+               <Sweep type="double">[0 12.52 12.52]</Sweep>
+               <Dihedral type="double">[-1 -1]</Dihedral>
+               <AoA type="double">[3 3]</AoA>
+               <tc type="double">[0 0]</tc>
+               <LESweep type="double">[0 0]</LESweep>
+               <TESweep type="double">[0 0]</TESweep>
+               <LineColor type="double">[]</LineColor>
+               <LineStyle type="double">[]</LineStyle>
+               <FaceColor type="double">[0 1 1]</FaceColor>
+               <FaceAlpha type="double">0.25</FaceAlpha>
+               <SpanVector>Y</SpanVector>
+               <Aerofoil type="cellstr">{NACA0016,NACA0016}</Aerofoil>
+               <Aerofoil_eta type="double">[0 1]</Aerofoil_eta>
+               <BeamLoc_eta type="double">[0 0.049 0.577 1]</BeamLoc_eta>
+               <Span type="double">-25.899</Span>
+               <Sweep_eta type="double">[0 0.049 1]</Sweep_eta>
+               <SweepLoc type="double">0.5</SweepLoc>
+               <Dihedral_eta type="double">[0 1]</Dihedral_eta>
+               <AoA_eta type="double">[0 1]</AoA_eta>
+               <Chord_eta type="double">[0 0.049 0.577 1]</Chord_eta>
+               <LE type="double">[17.04689532 17.04689532 20.269005468229 23.5812442801624;0 -1.269051 -14.943723 -25.899;5.94384394246562 5.9216925748634 5.67327864417432 5.43596093095328]</LE>
+               <TE type="double">[20.32289532 20.32289532 23.174005468229 24.7272442801624;0 -1.269051 -14.943723 -25.899;5.77215605753438 5.75000468993216 5.52103404535708 5.37590161589491]</TE>
+               <TipParent type="double">[]</TipParent>
+               <TipNormPos type="double">[]</TipNormPos>
+               <TipFlag>R</TipFlag>
+               <TipXOffset type="double">0</TipXOffset>
+               <TipYOffset type="double">0</TipYOffset>
+               <TipZOffset type="double">0</TipZOffset>
+               <RootChord type="double">[]</RootChord>
+               <LESweep_eta type="double">[0 1]</LESweep_eta>
+               <TESweep_eta type="double">[0 1]</TESweep_eta>
+               <Spar>
+                  <Name>PortWingFrontSpar</Name>
+                  <Type>Spar</Type>
+                  <Description type="cellstr">{This is the front spar of the port wing.}</Description>
+                  <DisplayName>Port Wing - Front Spar</DisplayName>
+                  <XLoc type="double">[0.15 0.15]</XLoc>
+                  <Eta type="double">[0 1]</Eta>
+                  <DynamicProperties type="table">
+                     <table>
+                        <Name type="cellstr">{xLoc,eta}</Name>
+                        <Value type="double">[0.15 0.15;0 1]</Value>
+                     </table>
+                  </DynamicProperties>
+                  <ActiveSetDisplayName>none</ActiveSetDisplayName>
+                  <ActiveSetMode>auto</ActiveSetMode>
+                  <BuildStatus/>
+                  <Mass type="double">0</Mass>
+                  <TotalMass type="double">0</TotalMass>
+                  <Origin type="double">[]</Origin>
+                  <XOffset type="double">0</XOffset>
+                  <YOffset type="double">0</YOffset>
+                  <ZOffset type="double">0</ZOffset>
+                  <SOffset type="double">0</SOffset>
+                  <SOffsetFlag>R</SOffsetFlag>
+               </Spar>
+               <Spar>
+                  <Name>PortWingRearSpar</Name>
+                  <Type>Spar</Type>
+                  <Description type="cellstr">{This is the rear spar of the port wing.}</Description>
+                  <DisplayName>Port Wing - Rear Spar</DisplayName>
+                  <XLoc type="double">[0.65 0.65]</XLoc>
+                  <Eta type="double">[0 1]</Eta>
+                  <DynamicProperties type="table">
+                     <table>
+                        <Name type="cellstr">{xLoc,eta}</Name>
+                        <Value type="double">[0.65 0.65;0 1]</Value>
+                     </table>
+                  </DynamicProperties>
+                  <ActiveSetDisplayName>none</ActiveSetDisplayName>
+                  <ActiveSetMode>auto</ActiveSetMode>
+                  <BuildStatus/>
+                  <Mass type="double">0</Mass>
+                  <TotalMass type="double">0</TotalMass>
+                  <Origin type="double">[]</Origin>
+                  <XOffset type="double">0</XOffset>
+                  <YOffset type="double">0</YOffset>
+                  <ZOffset type="double">0</ZOffset>
+                  <SOffset type="double">0</SOffset>
+                  <SOffsetFlag>R</SOffsetFlag>
+               </Spar>
+               <Entity>
+                  <Name>Stringer</Name>
+                  <Type>Entity</Type>
+                  <Description type="cellstr">{}</Description>
+                  <DynamicProperties type="table">
+                     <table>
+                        <Name type="cellstr">{Pitch}</Name>
+                        <Value type="double">0.2</Value>
+                     </table>
+                  </DynamicProperties>
+                  <ActiveSetDisplayName>none</ActiveSetDisplayName>
+                  <ActiveSetMode>auto</ActiveSetMode>
+                  <BuildStatus/>
+               </Entity>
+               <ControlSurface>
+                  <Name>Ail4</Name>
+                  <Type>ControlSurface</Type>
+                  <Description type="cellstr">{}</Description>
+                  <DisplayName>Inboard Aileron</DisplayName>
+                  <Eta type="double">[0.3 0.45]</Eta>
+                  <xLE type="double">[0.79 0.79]</xLE>
+                  <xTE type="double">[1 1]</xTE>
+                  <Max_def type="double">30</Max_def>
+                  <Max_rate type="double">80</Max_rate>
+                  <DynamicProperties type="cellstr">{}</DynamicProperties>
+                  <ActiveSetDisplayName>none</ActiveSetDisplayName>
+                  <ActiveSetMode>auto</ActiveSetMode>
+                  <BuildStatus/>
+                  <Mass type="double">0</Mass>
+                  <TotalMass type="double">0</TotalMass>
+                  <Origin type="double">[]</Origin>
+                  <XOffset type="double">0</XOffset>
+                  <YOffset type="double">0</YOffset>
+                  <ZOffset type="double">0</ZOffset>
+                  <SOffset type="double">0</SOffset>
+                  <SOffsetFlag>R</SOffsetFlag>
+                  <FaceColor>r</FaceColor>
+                  <FaceAlpha type="double">1</FaceAlpha>
+               </ControlSurface>
+               <ControlSurface>
+                  <Name>Ail5</Name>
+                  <Type>ControlSurface</Type>
+                  <Description type="cellstr">{}</Description>
+                  <DisplayName>Midboard Aileron</DisplayName>
+                  <Eta type="double">[0.55 0.7]</Eta>
+                  <xLE type="double">[0.79 0.79]</xLE>
+                  <xTE type="double">[1 1]</xTE>
+                  <Max_def type="double">30</Max_def>
+                  <Max_rate type="double">80</Max_rate>
+                  <DynamicProperties type="cellstr">{}</DynamicProperties>
+                  <ActiveSetDisplayName>none</ActiveSetDisplayName>
+                  <ActiveSetMode>auto</ActiveSetMode>
+                  <BuildStatus/>
+                  <Mass type="double">0</Mass>
+                  <TotalMass type="double">0</TotalMass>
+                  <Origin type="double">[]</Origin>
+                  <XOffset type="double">0</XOffset>
+                  <YOffset type="double">0</YOffset>
+                  <ZOffset type="double">0</ZOffset>
+                  <SOffset type="double">0</SOffset>
+                  <SOffsetFlag>R</SOffsetFlag>
+                  <FaceColor>r</FaceColor>
+                  <FaceAlpha type="double">1</FaceAlpha>
+               </ControlSurface>
+               <ControlSurface>
+                  <Name>Ail6</Name>
+                  <Type>ControlSurface</Type>
+                  <Description type="cellstr">{}</Description>
+                  <DisplayName>Outboard Aileron</DisplayName>
+                  <Eta type="double">[0.8 0.9]</Eta>
+                  <xLE type="double">[0.79 0.79]</xLE>
+                  <xTE type="double">[1 1]</xTE>
+                  <Max_def type="double">30</Max_def>
+                  <Max_rate type="double">80</Max_rate>
+                  <DynamicProperties type="cellstr">{}</DynamicProperties>
+                  <ActiveSetDisplayName>none</ActiveSetDisplayName>
+                  <ActiveSetMode>auto</ActiveSetMode>
+                  <BuildStatus/>
+                  <Mass type="double">0</Mass>
+                  <TotalMass type="double">0</TotalMass>
+                  <Origin type="double">[]</Origin>
+                  <XOffset type="double">0</XOffset>
+                  <YOffset type="double">0</YOffset>
+                  <ZOffset type="double">0</ZOffset>
+                  <SOffset type="double">0</SOffset>
+                  <SOffsetFlag>R</SOffsetFlag>
+                  <FaceColor>r</FaceColor>
+                  <FaceAlpha type="double">1</FaceAlpha>
+               </ControlSurface>
+               <Entity>
+                  <Name>Material</Name>
+                  <Type>Entity</Type>
+                  <Description type="cellstr">{}</Description>
+                  <DynamicProperties type="table">
+                     <table>
+                        <Name type="cellstr">{ID,Tensile_yield,Shear_yield,Density,PoissonsRatio}</Name>
+                     </table>
+                  </DynamicProperties>
+                  <ActiveSetDisplayName>none</ActiveSetDisplayName>
+                  <ActiveSetMode>auto</ActiveSetMode>
+                  <BuildStatus/>
+               </Entity>
+               <BluffBody>
+                  <Name>InbdEngine_Port</Name>
+                  <Type>BluffBody</Type>
+                  <Description type="cellstr">{This is the inboard engine on the port wing.}</Description>
+                  <DisplayName>Port Inboard Engine</DisplayName>
+                  <DynamicProperties type="cellstr">{}</DynamicProperties>
+                  <ActiveSetDisplayName>Length Set</ActiveSetDisplayName>
+                  <ActiveSetMode>auto</ActiveSetMode>
+                  <BuildStatus>built using active set 'lSet'</BuildStatus>
+                  <Mass type="double">0</Mass>
+                  <TotalMass type="double">0</TotalMass>
+                  <Origin type="double">[]</Origin>
+                  <XOffset type="double">-2</XOffset>
+                  <YOffset type="double">0</YOffset>
+                  <ZOffset type="double">-1.2</ZOffset>
+                  <SOffset type="double">0.21</SOffset>
+                  <SOffsetFlag>R</SOffsetFlag>
+                  <Length type="double">4</Length>
+                  <Eta type="double">[0 1]</Eta>
+                  <Radius type="double">[1.1 1.1]</Radius>
+                  <DeltaZ type="double">[0 0]</DeltaZ>
+                  <DeltaZ_eta type="double">[0 1]</DeltaZ_eta>
+                  <XData type="double">[0 4]</XData>
+                  <YData type="double">[0 0]</YData>
+                  <ZData type="double">[0 0]</ZData>
+                  <FaceColor type="double">[0 1 0]</FaceColor>
+                  <FaceAlpha type="double">0.25</FaceAlpha>
+                  <FaceLighting>gouraud</FaceLighting>
+               </BluffBody>
+            </LiftingSurface>
+            <BluffBody>
+               <Name>InbdEngine_Stbd</Name>
+               <Type>BluffBody</Type>
+               <Description type="cellstr">{This is the inboard engine on the starboard wing.}</Description>
+               <DisplayName>Starboard Inboard Engine</DisplayName>
+               <DynamicProperties type="cellstr">{}</DynamicProperties>
+               <ActiveSetDisplayName>Length Set</ActiveSetDisplayName>
+               <ActiveSetMode>auto</ActiveSetMode>
+               <BuildStatus>built using active set 'lSet'</BuildStatus>
+               <Mass type="double">0</Mass>
+               <TotalMass type="double">0</TotalMass>
+               <Origin type="double">[]</Origin>
+               <XOffset type="double">-2</XOffset>
+               <YOffset type="double">0</YOffset>
+               <ZOffset type="double">-1.2</ZOffset>
+               <SOffset type="double">0.21</SOffset>
+               <SOffsetFlag>R</SOffsetFlag>
+               <Length type="double">4</Length>
+               <Eta type="double">[0 1]</Eta>
+               <Radius type="double">[1.1 1.1]</Radius>
+               <DeltaZ type="double">[0 0]</DeltaZ>
+               <DeltaZ_eta type="double">[0 1]</DeltaZ_eta>
+               <XData type="double">[0 4]</XData>
+               <YData type="double">[0 0]</YData>
+               <ZData type="double">[0 0]</ZData>
+               <FaceColor type="double">[0 1 0]</FaceColor>
+               <FaceAlpha type="double">0.25</FaceAlpha>
+               <FaceLighting>gouraud</FaceLighting>
+            </BluffBody>
+         </LiftingSurface>
+         <LiftingSurface>
+            <Name>VTP</Name>
+            <Type>LiftingSurface</Type>
+            <Description type="cellstr">{This is the vertical tail plane.}</Description>
+            <DisplayName>Vertical tail plane</DisplayName>
+            <DynamicProperties type="table">
+               <table>
+                  <Name type="cellstr">{A,A_eta,A_var,A_,I11,I11_eta,I11_var,I11_,I22,I22_eta,I22_var,I22_,I12,I12_eta,I12_var,I12_,J,J_eta,J_var,J_,NSM,NSM_eta,NSM_var,NSM_,NSI,NSI_eta,NSI_var,NSI_,SCy,SCy_eta,SCy_var,SCy_,SCz,SCz_eta,SCz_var,SCz_,NAy,NAy_eta,NAy_var,NAy_,NAz,NAz_eta,NAz_var,NAz_,CMy,CMy_eta,CMy_var,CMy_,CMz,CMz_eta,CMz_var,CMz_,Chord,Chord_eta,Chord_var,Chord_,BeamLoc,BeamLoc_eta,BeamLoc_var,BeamLoc_,Sweep,Sweep_eta,Sweep_var,Sweep_,Dihedral,Dihedral_eta,Dihedral_var,Dihedral_,AoA,AoA_eta,AoA_var,AoA_,tc,tc_eta,tc_var,tc_,LESweep,LESweep_eta,LESweep_var,LESweep_,TESweep,TESweep_eta,TESweep_var,TESweep_}</Name>
+               </table>
+            </DynamicProperties>
+            <ActiveSetDisplayName>Parametric Set</ActiveSetDisplayName>
+            <ActiveSetMode>auto</ActiveSetMode>
+            <BuildStatus>built using active set 'pSet'</BuildStatus>
+            <Mass type="double">0</Mass>
+            <TotalMass type="double">0</TotalMass>
+            <Origin type="double">[]</Origin>
+            <XOffset type="double">0</XOffset>
+            <YOffset type="double">0</YOffset>
+            <ZOffset type="double">1</ZOffset>
+            <SOffset type="double">0.92</SOffset>
+            <SOffsetFlag>R</SOffsetFlag>
+            <A type="double">[0 0]</A>
+            <I11 type="double">[0 0]</I11>
+            <I22 type="double">[0 0]</I22>
+            <I12 type="double">[0 0]</I12>
+            <J type="double">[0 0]</J>
+            <NSM type="double">[0 0]</NSM>
+            <NSI type="double">[0 0]</NSI>
+            <SCy type="double">[0 0]</SCy>
+            <SCz type="double">[0 0]</SCz>
+            <NAy type="double">[0 0]</NAy>
+            <NAz type="double">[0 0]</NAz>
+            <CMy type="double">[0 0]</CMy>
+            <CMz type="double">[0 0]</CMz>
+            <Chord type="double">[5.259 5.259]</Chord>
+            <BeamLoc type="double">[0.5 0.5]</BeamLoc>
+            <Sweep type="double">[41 41]</Sweep>
+            <Dihedral type="double">[0 0]</Dihedral>
+            <AoA type="double">[0 0]</AoA>
+            <tc type="double">[0 0]</tc>
+            <LESweep type="double">[0 0]</LESweep>
+            <TESweep type="double">[0 0]</TESweep>
+            <LineColor type="double">[]</LineColor>
+            <LineStyle type="double">[]</LineStyle>
+            <FaceColor type="double">[0 1 1]</FaceColor>
+            <FaceAlpha type="double">0.25</FaceAlpha>
+            <SpanVector>Z</SpanVector>
+            <Aerofoil type="cellstr">{NACA0016,NACA0016}</Aerofoil>
+            <Aerofoil_eta type="double">[0 1]</Aerofoil_eta>
+            <BeamLoc_eta type="double">[0 1]</BeamLoc_eta>
+            <Span type="double">5.259</Span>
+            <Sweep_eta type="double">[0 1]</Sweep_eta>
+            <SweepLoc type="double">0.25</SweepLoc>
+            <Dihedral_eta type="double">[0 1]</Dihedral_eta>
+            <AoA_eta type="double">[0 1]</AoA_eta>
+            <Chord_eta type="double">[0 1]</Chord_eta>
+            <LE type="double">[32.352396 36.9239749541755;0 0;4.858 10.117]</LE>
+            <TE type="double">[37.611396 42.1829749541755;0 0;4.858 10.117]</TE>
+            <TipParent type="double">[]</TipParent>
+            <TipNormPos type="double">[]</TipNormPos>
+            <TipFlag>R</TipFlag>
+            <TipXOffset type="double">0</TipXOffset>
+            <TipYOffset type="double">0</TipYOffset>
+            <TipZOffset type="double">0</TipZOffset>
+            <RootChord type="double">[]</RootChord>
+            <LESweep_eta type="double">[0 1]</LESweep_eta>
+            <TESweep_eta type="double">[0 1]</TESweep_eta>
+            <ControlSurface>
+               <Name>Rudder</Name>
+               <Type>ControlSurface</Type>
+               <Description type="cellstr">{}</Description>
+               <DisplayName>Rudder</DisplayName>
+               <Eta type="double">[0.05 0.95]</Eta>
+               <xLE type="double">[0.79 0.79]</xLE>
+               <xTE type="double">[1 1]</xTE>
+               <Max_def type="double">30</Max_def>
+               <Max_rate type="double">80</Max_rate>
+               <DynamicProperties type="cellstr">{}</DynamicProperties>
+               <ActiveSetDisplayName>none</ActiveSetDisplayName>
+               <ActiveSetMode>auto</ActiveSetMode>
+               <BuildStatus/>
+               <Mass type="double">0</Mass>
+               <TotalMass type="double">0</TotalMass>
+               <Origin type="double">[]</Origin>
+               <XOffset type="double">0</XOffset>
+               <YOffset type="double">0</YOffset>
+               <ZOffset type="double">0</ZOffset>
+               <SOffset type="double">0</SOffset>
+               <SOffsetFlag>R</SOffsetFlag>
+               <FaceColor>r</FaceColor>
+               <FaceAlpha type="double">1</FaceAlpha>
+            </ControlSurface>
+            <LiftingSurface>
+               <Name>HTP_Stbd</Name>
+               <Type>LiftingSurface</Type>
+               <Description type="cellstr">{This is the horizontal tail plane for the starboard side.}</Description>
+               <DisplayName>Starboard Horizontal tail plane</DisplayName>
+               <DynamicProperties type="table">
+                  <table>
+                     <Name type="cellstr">{A,A_eta,A_var,A_,I11,I11_eta,I11_var,I11_,I22,I22_eta,I22_var,I22_,I12,I12_eta,I12_var,I12_,J,J_eta,J_var,J_,NSM,NSM_eta,NSM_var,NSM_,NSI,NSI_eta,NSI_var,NSI_,SCy,SCy_eta,SCy_var,SCy_,SCz,SCz_eta,SCz_var,SCz_,NAy,NAy_eta,NAy_var,NAy_,NAz,NAz_eta,NAz_var,NAz_,CMy,CMy_eta,CMy_var,CMy_,CMz,CMz_eta,CMz_var,CMz_,Chord,Chord_eta,Chord_var,Chord_,BeamLoc,BeamLoc_eta,BeamLoc_var,BeamLoc_,Sweep,Sweep_eta,Sweep_var,Sweep_,Dihedral,Dihedral_eta,Dihedral_var,Dihedral_,AoA,AoA_eta,AoA_var,AoA_,tc,tc_eta,tc_var,tc_,LESweep,LESweep_eta,LESweep_var,LESweep_,TESweep,TESweep_eta,TESweep_var,TESweep_,RootXOffset,SweepType,DihedralType,AoAType}</Name>
+                  </table>
+               </DynamicProperties>
+               <ActiveSetDisplayName>Parametric Set</ActiveSetDisplayName>
+               <ActiveSetMode>auto</ActiveSetMode>
+               <BuildStatus>built using active set 'pSet'</BuildStatus>
+               <Mass type="double">0</Mass>
+               <TotalMass type="double">0</TotalMass>
+               <Origin type="double">[]</Origin>
+               <XOffset type="double">0</XOffset>
+               <YOffset type="double">0</YOffset>
+               <ZOffset type="double">0</ZOffset>
+               <SOffset type="double">1</SOffset>
+               <SOffsetFlag>R</SOffsetFlag>
+               <A type="double">[0 0]</A>
+               <I11 type="double">[0 0]</I11>
+               <I22 type="double">[0 0]</I22>
+               <I12 type="double">[0 0]</I12>
+               <J type="double">[0 0]</J>
+               <NSM type="double">[0 0]</NSM>
+               <NSI type="double">[0 0]</NSI>
+               <SCy type="double">[0 0]</SCy>
+               <SCz type="double">[0 0]</SCz>
+               <NAy type="double">[0 0]</NAy>
+               <NAz type="double">[0 0]</NAz>
+               <CMy type="double">[0 0]</CMy>
+               <CMz type="double">[0 0]</CMz>
+               <Chord type="double">[3.476 1.217]</Chord>
+               <BeamLoc type="double">[0.5 0.5]</BeamLoc>
+               <Sweep type="double">[20.63 20.63]</Sweep>
+               <Dihedral type="double">[-3 -3]</Dihedral>
+               <AoA type="double">[0 0]</AoA>
+               <tc type="double">[0 0]</tc>
+               <LESweep type="double">[0 0]</LESweep>
+               <TESweep type="double">[0 0]</TESweep>
+               <LineColor type="double">[]</LineColor>
+               <LineStyle type="double">[]</LineStyle>
+               <FaceColor type="double">[0 1 1]</FaceColor>
+               <FaceAlpha type="double">0.25</FaceAlpha>
+               <SpanVector>Y</SpanVector>
+               <Aerofoil type="cellstr">{NACA0016,NACA0016}</Aerofoil>
+               <Aerofoil_eta type="double">[0 1]</Aerofoil_eta>
+               <BeamLoc_eta type="double">[0 1]</BeamLoc_eta>
+               <Span type="double">11.731</Span>
+               <Sweep_eta type="double">[0 1]</Sweep_eta>
+               <SweepLoc type="double">0.25</SweepLoc>
+               <Dihedral_eta type="double">[0 1]</Dihedral_eta>
+               <AoA_eta type="double">[0 1]</AoA_eta>
+               <Chord_eta type="double">[0 1]</Chord_eta>
+               <LE type="double">[37.8154749541755 42.7966294889449;0 11.731;10.117 9.50220434123064]</LE>
+               <TE type="double">[41.2914749541755 44.0136294889449;0 11.731;10.117 9.50220434123064]</TE>
+               <TipParent type="double">[]</TipParent>
+               <TipNormPos type="double">[]</TipNormPos>
+               <TipFlag>R</TipFlag>
+               <TipXOffset type="double">0</TipXOffset>
+               <TipYOffset type="double">0</TipYOffset>
+               <TipZOffset type="double">0</TipZOffset>
+               <RootChord type="double">[]</RootChord>
+               <LESweep_eta type="double">[0 1]</LESweep_eta>
+               <TESweep_eta type="double">[0 1]</TESweep_eta>
+               <ControlSurface>
+                  <Name>Elev1</Name>
+                  <Type>ControlSurface</Type>
+                  <Description type="cellstr">{}</Description>
+                  <DisplayName>Starboard Elevator</DisplayName>
+                  <Eta type="double">[0.2 0.8775]</Eta>
+                  <xLE type="double">[0.6 0.6]</xLE>
+                  <xTE type="double">[1 1]</xTE>
+                  <Max_def type="double">30</Max_def>
+                  <Max_rate type="double">80</Max_rate>
+                  <DynamicProperties type="cellstr">{}</DynamicProperties>
+                  <ActiveSetDisplayName>none</ActiveSetDisplayName>
+                  <ActiveSetMode>auto</ActiveSetMode>
+                  <BuildStatus/>
+                  <Mass type="double">0</Mass>
+                  <TotalMass type="double">0</TotalMass>
+                  <Origin type="double">[]</Origin>
+                  <XOffset type="double">0</XOffset>
+                  <YOffset type="double">0</YOffset>
+                  <ZOffset type="double">0</ZOffset>
+                  <SOffset type="double">0</SOffset>
+                  <SOffsetFlag>R</SOffsetFlag>
+                  <FaceColor>r</FaceColor>
+                  <FaceAlpha type="double">1</FaceAlpha>
+               </ControlSurface>
+               <LiftingSurface>
+                  <Name>HTP_Port</Name>
+                  <Type>LiftingSurface</Type>
+                  <Description type="cellstr">{This is the horizontal tail plane for the port side.}</Description>
+                  <DisplayName>Portside Horizontal tail plane</DisplayName>
+                  <DynamicProperties type="table">
+                     <table>
+                        <Name type="cellstr">{A,A_eta,A_var,A_,I11,I11_eta,I11_var,I11_,I22,I22_eta,I22_var,I22_,I12,I12_eta,I12_var,I12_,J,J_eta,J_var,J_,NSM,NSM_eta,NSM_var,NSM_,NSI,NSI_eta,NSI_var,NSI_,SCy,SCy_eta,SCy_var,SCy_,SCz,SCz_eta,SCz_var,SCz_,NAy,NAy_eta,NAy_var,NAy_,NAz,NAz_eta,NAz_var,NAz_,CMy,CMy_eta,CMy_var,CMy_,CMz,CMz_eta,CMz_var,CMz_,Chord,Chord_eta,Chord_var,Chord_,BeamLoc,BeamLoc_eta,BeamLoc_var,BeamLoc_,Sweep,Sweep_eta,Sweep_var,Sweep_,Dihedral,Dihedral_eta,Dihedral_var,Dihedral_,AoA,AoA_eta,AoA_var,AoA_,tc,tc_eta,tc_var,tc_,LESweep,LESweep_eta,LESweep_var,LESweep_,TESweep,TESweep_eta,TESweep_var,TESweep_,SweepType,DihedralType,AoAType}</Name>
+                     </table>
+                  </DynamicProperties>
+                  <ActiveSetDisplayName>Parametric Set</ActiveSetDisplayName>
+                  <ActiveSetMode>auto</ActiveSetMode>
+                  <BuildStatus>built using active set 'pSet'</BuildStatus>
+                  <Mass type="double">0</Mass>
+                  <TotalMass type="double">0</TotalMass>
+                  <Origin type="double">[]</Origin>
+                  <XOffset type="double">0</XOffset>
+                  <YOffset type="double">0</YOffset>
+                  <ZOffset type="double">0</ZOffset>
+                  <SOffset type="double">0</SOffset>
+                  <SOffsetFlag>R</SOffsetFlag>
+                  <A type="double">[0 0]</A>
+                  <I11 type="double">[0 0]</I11>
+                  <I22 type="double">[0 0]</I22>
+                  <I12 type="double">[0 0]</I12>
+                  <J type="double">[0 0]</J>
+                  <NSM type="double">[0 0]</NSM>
+                  <NSI type="double">[0 0]</NSI>
+                  <SCy type="double">[0 0]</SCy>
+                  <SCz type="double">[0 0]</SCz>
+                  <NAy type="double">[0 0]</NAy>
+                  <NAz type="double">[0 0]</NAz>
+                  <CMy type="double">[0 0]</CMy>
+                  <CMz type="double">[0 0]</CMz>
+                  <Chord type="double">[3.476 1.217]</Chord>
+                  <BeamLoc type="double">[0.5 0.5]</BeamLoc>
+                  <Sweep type="double">[20.63 20.63]</Sweep>
+                  <Dihedral type="double">[-3 -3]</Dihedral>
+                  <AoA type="double">[0 0]</AoA>
+                  <tc type="double">[0 0]</tc>
+                  <LESweep type="double">[0 0]</LESweep>
+                  <TESweep type="double">[0 0]</TESweep>
+                  <LineColor type="double">[]</LineColor>
+                  <LineStyle type="double">[]</LineStyle>
+                  <FaceColor type="double">[0 1 1]</FaceColor>
+                  <FaceAlpha type="double">0.25</FaceAlpha>
+                  <SpanVector>Y</SpanVector>
+                  <Aerofoil type="cellstr">{NACA0016,NACA0016}</Aerofoil>
+                  <Aerofoil_eta type="double">[0 1]</Aerofoil_eta>
+                  <BeamLoc_eta type="double">[0 1]</BeamLoc_eta>
+                  <Span type="double">-11.731</Span>
+                  <Sweep_eta type="double">[0 1]</Sweep_eta>
+                  <SweepLoc type="double">0.25</SweepLoc>
+                  <Dihedral_eta type="double">[0 1]</Dihedral_eta>
+                  <AoA_eta type="double">[0 1]</AoA_eta>
+                  <Chord_eta type="double">[0 1]</Chord_eta>
+                  <LE type="double">[37.8154749541755 42.7966294889449;0 -11.731;10.117 9.50220434123064]</LE>
+                  <TE type="double">[41.2914749541755 44.0136294889449;0 -11.731;10.117 9.50220434123064]</TE>
+                  <TipParent type="double">[]</TipParent>
+                  <TipNormPos type="double">[]</TipNormPos>
+                  <TipFlag>R</TipFlag>
+                  <TipXOffset type="double">0</TipXOffset>
+                  <TipYOffset type="double">0</TipYOffset>
+                  <TipZOffset type="double">0</TipZOffset>
+                  <RootChord type="double">[]</RootChord>
+                  <LESweep_eta type="double">[0 1]</LESweep_eta>
+                  <TESweep_eta type="double">[0 1]</TESweep_eta>
+                  <ControlSurface>
+                     <Name>Elev2</Name>
+                     <Type>ControlSurface</Type>
+                     <Description type="cellstr">{}</Description>
+                     <DisplayName>Starboard Elevator</DisplayName>
+                     <Eta type="double">[0.2 0.8775]</Eta>
+                     <xLE type="double">[0.6 0.6]</xLE>
+                     <xTE type="double">[1 1]</xTE>
+                     <Max_def type="double">30</Max_def>
+                     <Max_rate type="double">80</Max_rate>
+                     <DynamicProperties type="cellstr">{}</DynamicProperties>
+                     <ActiveSetDisplayName>none</ActiveSetDisplayName>
+                     <ActiveSetMode>auto</ActiveSetMode>
+                     <BuildStatus/>
+                     <Mass type="double">0</Mass>
+                     <TotalMass type="double">0</TotalMass>
+                     <Origin type="double">[]</Origin>
+                     <XOffset type="double">0</XOffset>
+                     <YOffset type="double">0</YOffset>
+                     <ZOffset type="double">0</ZOffset>
+                     <SOffset type="double">0</SOffset>
+                     <SOffsetFlag>R</SOffsetFlag>
+                     <FaceColor>r</FaceColor>
+                     <FaceAlpha type="double">1</FaceAlpha>
+                  </ControlSurface>
+               </LiftingSurface>
+            </LiftingSurface>
+         </LiftingSurface>
+      </BluffBody>
+   </Aircraft>
+   <LoadCases>
+      <LoadCase>
+         <Name>1MC_M_0.761_H_7160</Name>
+         <Type>LoadCase</Type>
+         <Description type="cellstr">{}</Description>
+         <DynamicProperties type="cellstr">{}</DynamicProperties>
+         <ActiveSetDisplayName>none</ActiveSetDisplayName>
+         <ActiveSetMode>auto</ActiveSetMode>
+         <BuildStatus/>
+         <LoadCaseType>one-minus-cosine</LoadCaseType>
+         <CaseNumber type="double">0</CaseNumber>
+         <Altitude type="double">7160</Altitude>
+         <LoadFactor type="double">2.5</LoadFactor>
+         <FuelFraction type="double">1</FuelFraction>
+         <CsDeflections type="table">
+            <table>
+               <Name type="cellstr">{Ail1,Ail2,Ail3,Rudder,Ail4,Ail5,Ail6,Elev1,Elev2}</Name>
+               <Parent type="cellstr">{StbdWing,StbdWing,StbdWing,VTP,PortWing,PortWing,PortWing,HTP_Stbd,HTP_Port}</Parent>
+               <Value type="double">[-15;0;0;0;0;0;0;0;-10]</Value>
+               <Type type="cellstr">{free,fixed,fixed,fixed,fixed,fixed,fixed,free,fixed}</Type>
+            </table>
+         </CsDeflections>
+         <Mach type="double">0.761</Mach>
+         <PayloadMass type="double">20000</PayloadMass>
+         <CgMac type="double">0.25</CgMac>
+         <GustLength type="double">[10 20 30 40 50 60 70 80 90 100 110]</GustLength>
+         <GustDirection type="double">[0 0 1]</GustDirection>
+         <TurbulenceScale type="double">[]</TurbulenceScale>
+         <SpectrumType>Von Karman</SpectrumType>
+      </LoadCase>
+      <LoadCase>
+         <Name>CT_M_0.761_H_7160</Name>
+         <Type>LoadCase</Type>
+         <Description type="cellstr">{}</Description>
+         <DynamicProperties type="cellstr">{}</DynamicProperties>
+         <ActiveSetDisplayName>none</ActiveSetDisplayName>
+         <ActiveSetMode>auto</ActiveSetMode>
+         <BuildStatus/>
+         <LoadCaseType>continuous-turbulence</LoadCaseType>
+         <CaseNumber type="double">0</CaseNumber>
+         <Altitude type="double">7160</Altitude>
+         <LoadFactor type="double">1</LoadFactor>
+         <FuelFraction type="double">0.5</FuelFraction>
+         <CsDeflections type="table">
+            <table>
+               <Name type="cellstr">{Ail1,Ail2,Ail3,Rudder,Ail4,Ail5,Ail6,Elev1,Elev2}</Name>
+               <Parent type="cellstr">{StbdWing,StbdWing,StbdWing,VTP,PortWing,PortWing,PortWing,HTP_Stbd,HTP_Port}</Parent>
+               <Value type="double">[-15;0;0;0;0;0;0;0;0]</Value>
+               <Type type="cellstr">{fixed,fixed,fixed,fixed,fixed,fixed,fixed,fixed,fixed}</Type>
+            </table>
+         </CsDeflections>
+         <Mach type="double">0.761</Mach>
+         <PayloadMass type="double">20000</PayloadMass>
+         <CgMac type="double">0.25</CgMac>
+         <GustLength type="double">[10 20 30 40 50 60 70 80 90 100 110]</GustLength>
+         <GustDirection type="double">[]</GustDirection>
+         <TurbulenceScale>6500</TurbulenceScale>
+         <SpectrumType>Dryden</SpectrumType>
+      </LoadCase>
+      <LoadCase>
+         <Name>1g_cruise</Name>
+         <Type>LoadCase</Type>
+         <Description type="cellstr">{}</Description>
+         <DynamicProperties type="cellstr">{}</DynamicProperties>
+         <ActiveSetDisplayName>none</ActiveSetDisplayName>
+         <ActiveSetMode>auto</ActiveSetMode>
+         <BuildStatus/>
+         <LoadCaseType>cruise</LoadCaseType>
+         <CaseNumber type="double">0</CaseNumber>
+         <Altitude type="double">7160</Altitude>
+         <LoadFactor type="double">1</LoadFactor>
+         <FuelFraction type="double">1</FuelFraction>
+         <CsDeflections type="table">
+            <table>
+               <Name type="cellstr">{Ail1,Ail2,Ail3,Rudder,Ail4,Ail5,Ail6,Elev1,Elev2}</Name>
+               <Parent type="cellstr">{StbdWing,StbdWing,StbdWing,VTP,PortWing,PortWing,PortWing,HTP_Stbd,HTP_Port}</Parent>
+               <Value type="double">[-15;0;0;0;0;0;0;0;0]</Value>
+               <Type type="cellstr">{fixed,fixed,fixed,fixed,fixed,fixed,fixed,fixed,fixed}</Type>
+            </table>
+         </CsDeflections>
+         <Mach type="double">0.761</Mach>
+         <PayloadMass type="double">20000</PayloadMass>
+         <CgMac type="double">0.25</CgMac>
+         <GustLength type="double">[10 20 30 40 50 60 70 80 90 100 110]</GustLength>
+         <GustDirection type="double">[]</GustDirection>
+         <TurbulenceScale type="double">[]</TurbulenceScale>
+         <SpectrumType>Von Karman</SpectrumType>
+      </LoadCase>
+      <LoadCase>
+         <Name>2.5g_cruise</Name>
+         <Type>LoadCase</Type>
+         <Description type="cellstr">{}</Description>
+         <DynamicProperties type="cellstr">{}</DynamicProperties>
+         <ActiveSetDisplayName>none</ActiveSetDisplayName>
+         <ActiveSetMode>auto</ActiveSetMode>
+         <BuildStatus/>
+         <LoadCaseType>manoeuvre</LoadCaseType>
+         <CaseNumber type="double">0</CaseNumber>
+         <Altitude type="double">7160</Altitude>
+         <LoadFactor type="double">2.5</LoadFactor>
+         <FuelFraction type="double">1</FuelFraction>
+         <CsDeflections type="table">
+            <table>
+               <Name type="cellstr">{Ail1,Ail2,Ail3,Rudder,Ail4,Ail5,Ail6,Elev1,Elev2}</Name>
+               <Parent type="cellstr">{StbdWing,StbdWing,StbdWing,VTP,PortWing,PortWing,PortWing,HTP_Stbd,HTP_Port}</Parent>
+               <Value type="double">[-15;0;0;0;0;0;0;0;0]</Value>
+               <Type type="cellstr">{fixed,fixed,fixed,fixed,fixed,fixed,fixed,fixed,fixed}</Type>
+            </table>
+         </CsDeflections>
+         <Mach type="double">0.761</Mach>
+         <PayloadMass type="double">20000</PayloadMass>
+         <CgMac type="double">0.25</CgMac>
+         <GustLength type="double">[10 20 30 40 50 60 70 80 90 100 110]</GustLength>
+         <GustDirection type="double">[]</GustDirection>
+         <TurbulenceScale type="double">[]</TurbulenceScale>
+         <SpectrumType>Von Karman</SpectrumType>
+      </LoadCase>
+      <LoadCase>
+         <Name>1.5g_cruise</Name>
+         <Type>LoadCase</Type>
+         <Description type="cellstr">{}</Description>
+         <DynamicProperties type="cellstr">{}</DynamicProperties>
+         <ActiveSetDisplayName>none</ActiveSetDisplayName>
+         <ActiveSetMode>auto</ActiveSetMode>
+         <BuildStatus/>
+         <LoadCaseType>manoeuvre</LoadCaseType>
+         <CaseNumber type="double">0</CaseNumber>
+         <Altitude type="double">7160</Altitude>
+         <LoadFactor type="double">1.5</LoadFactor>
+         <FuelFraction type="double">1</FuelFraction>
+         <CsDeflections type="table">
+            <table>
+               <Name type="cellstr">{Ail1,Ail2,Ail3,Rudder,Ail4,Ail5,Ail6,Elev1,Elev2}</Name>
+               <Parent type="cellstr">{StbdWing,StbdWing,StbdWing,VTP,PortWing,PortWing,PortWing,HTP_Stbd,HTP_Port}</Parent>
+               <Value type="double">[-15;0;0;0;0;0;0;0;0]</Value>
+               <Type type="cellstr">{fixed,fixed,fixed,fixed,fixed,fixed,fixed,fixed,fixed}</Type>
+            </table>
+         </CsDeflections>
+         <Mach type="double">0.761</Mach>
+         <PayloadMass type="double">20000</PayloadMass>
+         <CgMac type="double">0.25</CgMac>
+         <GustLength type="double">[10 20 30 40 50 60 70 80 90 100 110]</GustLength>
+         <GustDirection type="double">[]</GustDirection>
+         <TurbulenceScale type="double">[]</TurbulenceScale>
+         <SpectrumType>Von Karman</SpectrumType>
+      </LoadCase>
+   </LoadCases>
+</Framework>

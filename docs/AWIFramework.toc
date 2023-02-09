@@ -1,0 +1,19 @@
+<<<<<<< Updated upstream
+\contentsline {section}{Introduction}{3}
+\contentsline {section}{Quick Start Guide (Airbus)}{4}
+\contentsline {subsubsection}{\numberline {0.0.1}Navigate to the AWI files and start AWI}{9}
+\contentsline {subsubsection}{\numberline {0.0.2}The AWI GUI}{10}
+\contentsline {subsubsection}{\numberline {0.0.3}Import a FAME model}{11}
+\contentsline {section}{Converting FAME to AWI Workspace (Airbus)}{12}
+\contentsline {subsection}{Assumptions about the FAME folder structure}{12}
+\contentsline {subsection}{Step-by-step import process}{13}
+=======
+\contentsline {section}{Introduction}{3}
+\contentsline {section}{Quick Start Guide (Airbus)}{4}
+\contentsline {subsubsection}{\numberline {0.0.1}Navigate to the AWI files and start AWI}{9}
+\contentsline {subsubsection}{\numberline {0.0.2}The AWI GUI}{10}
+\contentsline {subsubsection}{\numberline {0.0.3}Import a FAME model}{11}
+\contentsline {section}{Converting FAME to AWI Workspace (Airbus)}{12}
+\contentsline {subsection}{Assumptions about the FAME folder structure}{12}
+\contentsline {subsection}{An explanation on the FAME import procedures}{14}
+>>>>>>> Stashed changes
